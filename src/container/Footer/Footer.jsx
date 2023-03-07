@@ -6,9 +6,10 @@ import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 import { FooterOverlay, Newsletter } from '../../components';
 import { images } from '../../constants';
 import './Footer.css';
+import StarsCanvas from "../../components/canvas/Stars";
 
 const Footer = () => (
-    <div className="app__footer section__padding" id="login">
+    <div className="app__footer section__padding" style={{zIndex: '-2', position: 'relative'}} id="login">
         <FooterOverlay />
         <Newsletter />
 
@@ -43,6 +44,8 @@ const Footer = () => (
         <div className="footer__copyright">
             <p className="p__opensans">2021 Gericht. All Rights reserved.</p>
         </div>
+
+        <StarsCanvas/>
 
     </div>
 );

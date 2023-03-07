@@ -2,9 +2,10 @@ import React from 'react';
 
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
+import StarsCanvas from "../../components/canvas/Stars";
 
 const FindUs = () => (
-    <div className="app__bg app__wrapper section__padding" id="contact">
+    <div className="app__bg app__wrapper section__padding" style={{zIndex: '-2', position: 'relative'}} id="contact">
         <div className="app__wrapper_info">
             <SubHeading title="Contact" />
             <h1 className="headtext__cormorant" style={{ marginBottom: '3rem' }}>Find Us</h1>
@@ -20,6 +21,8 @@ const FindUs = () => (
         <div className="app__wrapper_img">
             <img src={images.findus} alt="finus_img" />
         </div>
+
+        <StarsCanvas/>
     </div>
 );
 

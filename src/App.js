@@ -4,20 +4,30 @@ import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, Special
 import { Navbar } from './components';
 import './App.css';
 import Splash from "./components/Splash/Splash";
+import StarsCanvas from "./components/canvas/Stars";
 
 const App = () => (
   <div>
     <Splash/>
     <Navbar />
     <Header />
-    <AboutUs />
+      <div style={{position: "relative", zIndex: '0'}}>
+          <AboutUs />
+
+      </div>
+
     <SpecialMenu />
-    <Chef />
+      <div style={{position: "relative"}}>
+         <Chef />
+      </div>
     <Intro />
     <Laurels />
     <Gallery />
     <FindUs />
-    <Footer />
+      <div style={{position: "relative", zIndex: '0'}}>
+           <Footer />
+          <StarsCanvas/>
+      </div>
   </div>
 );
 

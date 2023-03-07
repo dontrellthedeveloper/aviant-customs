@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7683885f-776d-439f-98e4-af2a39e7da3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/ScrollToTop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/canvas/Stars.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/canvas/Stars2.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Splash/Splash.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Splash/Splash.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Splash/Splash.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Splash/Splash.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Chef/Chef.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Chef/Chef.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Findus/FindUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Findus/FindUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Laurels/Laurels.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Laurels/Laurels.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
       <workItem from="1677820188505" duration="1232000" />
       <workItem from="1677825133366" duration="1816000" />
       <workItem from="1677906366419" duration="12053000" />
-      <workItem from="1678077213574" duration="17993000" />
+      <workItem from="1678077213574" duration="21330000" />
     </task>
     <servers />
   </component>

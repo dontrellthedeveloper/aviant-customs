@@ -5,9 +5,11 @@ import React from 'react';
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import './Chef.css';
+import StarsCanvas from "../../components/canvas/Stars";
+import StarsCanvas2 from "../../components/canvas/Stars2";
 
 const Chef = () => (
-    <div className="app__bg app__wrapper section__padding">
+    <div className="app__bg app__wrapper section__padding" style={{zIndex: '-2', position: 'relative'}} >
         <div className="app__wrapper_img app__wrapper_img-reverse">
             <img src={images.chef} alt="chef_image" />
         </div>
@@ -29,6 +31,7 @@ const Chef = () => (
                 <img src={images.sign} alt="sign_image" />
             </div>
         </div>
+        <StarsCanvas2 />
     </div>
 );
 
