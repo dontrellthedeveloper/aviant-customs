@@ -11,19 +11,26 @@ const App = () => (
     <Splash/>
     <Navbar />
     <Header />
+      <div style={{position: "relative"}}>
+          <Chef />
+      </div>
+      <Gallery />
+      <div style={{position: "relative"}}>
+      <FindUs />
+      </div>
+      <SpecialMenu />
       <div style={{position: "relative", zIndex: '0'}}>
           <AboutUs />
 
       </div>
 
-    <SpecialMenu />
-      <div style={{position: "relative"}}>
-         <Chef />
-      </div>
+
+
+
     <Intro />
     <Laurels />
-    <Gallery />
-    <FindUs />
+
+
       <div style={{position: "relative", zIndex: '0'}}>
            <Footer />
           <StarsCanvas/>

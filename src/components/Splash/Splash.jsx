@@ -60,7 +60,7 @@ const Splash = () => {
             <AnimatePresence>
 
                     <div
-                        className={`${fadeElement ? "" : "fade-out fade-2"} ${visible ? "" : "fade-out-2 fade-2"}   `}
+                        className={`${fadeElement ? "" : "fade-out-2 fade-2"} ${visible ? "" : "fade-out-2 fade-2"}   `}
 
                     >
 
