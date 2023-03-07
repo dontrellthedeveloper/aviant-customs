@@ -20,6 +20,8 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
+import jiggs from '../assets/aviant-customs-1.png';
+import logo2 from '../assets/aviantcustomslogogold.png'
 
 export default {
   bg,
@@ -31,6 +33,7 @@ export default {
   gallery04,
   knife,
   logo,
+  logo2,
   menu,
   overlaybg,
   spoon,
@@ -44,4 +47,5 @@ export default {
   sign,
   quote,
   gericht,
+  jiggs,
 };

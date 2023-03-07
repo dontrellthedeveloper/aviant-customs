@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7683885f-776d-439f-98e4-af2a39e7da3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Splash/Splash.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Splash/Splash.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VideoSlient.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/ScrollToTop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterOverlay.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterOverlay.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/FooterOverlay.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/FooterOverlay.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Newsletter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Newsletter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Newsletter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Newsletter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Splash/Splash.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Splash/Splash.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Splash/Splash.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Splash/Splash.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +65,7 @@
       <workItem from="1677820188505" duration="1232000" />
       <workItem from="1677825133366" duration="1816000" />
       <workItem from="1677906366419" duration="12053000" />
-      <workItem from="1678077213574" duration="5463000" />
+      <workItem from="1678077213574" duration="17993000" />
     </task>
     <servers />
   </component>
