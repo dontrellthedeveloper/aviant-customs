@@ -1,0 +1,21 @@
+import React, {useRef, useEffect} from "react"
+import videoBg from '../assets/SPLASH_ANIMATION.mp4';
+
+export default function AutoPlaySilentVideo(props) {
+    console.log(props.className)
+    const videoRef = useRef(undefined);
+    useEffect(() => {
+        videoRef.current.defaultMuted = true;
+    })
+    return (
+        <video
+            className={props.className}
+            ref={videoRef}
+            loop
+            autoPlay
+            muted
+            playsInline>
+            <source src={videoBg} type="video/mp4"/>
+        </video>
+    );
+}

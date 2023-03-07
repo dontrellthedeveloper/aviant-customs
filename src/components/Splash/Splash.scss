@@ -1,0 +1,69 @@
+#splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:white;
+}
+
+.preloader {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.status {
+    background-image: url("../../assets/wine-preloader-2.gif");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+.video-bg {
+    width: 100%;
+//height: 100vh;
+    font-family: Impact, Haettenschweiler,'Arial Narrow Bold', sans-serif;
+
+
+video {
+    width: 100%;
+    height: 100%;
+//height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+}
+
+.video-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*color: var(--secondary-color);*/
+    z-index: 500;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //background-color: #000000cc;
+//background-color: #edf2f8cc;
+//background-color: rgba(0,0,0,.8);
+}
