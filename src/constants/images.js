@@ -21,7 +21,8 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import jiggs from '../assets/aviant-customs-1.png';
-import logo2 from '../assets/aviantcustomslogogold.png'
+import logo2 from '../assets/aviantcustomslogogold.png';
+import crown from '../assets/crown.png';
 
 export default {
   bg,
@@ -48,4 +49,5 @@ export default {
   quote,
   gericht,
   jiggs,
+  crown
 };

@@ -4,10 +4,11 @@ import React, {useState, useEffect, useRef} from 'react';
 
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
-import './Chef.css';
+import './Chef.scss';
 import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
 import videoBg from '../../assets/PRIYA_REEL.mp4';
+import Div100vh from 'react-div-100vh'
 
 const Chef = () => {
     const [playing, setPlaying] = useState(false);
@@ -64,8 +65,12 @@ const Chef = () => {
     }, [isVideoMuted]);
 
     return (
-        <div style={{height: '900px'}}>
-            <div className="app__bg app__wrapper section__padding" style={{zIndex: -2, position: 'relative'}}>
+        <Div100vh
+            // style={{height: '900px'}}
+        >
+            <div className="app__bg app__wrapper section__padding"
+                 style={{zIndex: -2, position: 'relative', borderTop: '5px solid rgb(224, 204, 132)'}}
+            >
                 <div className="app__wrapper_img app__wrapper_img-reverse" style={{zIndex: 10}}>
 
                     <video
@@ -77,9 +82,9 @@ const Chef = () => {
                         // onMouseOver={videoHoverOn}
                         // onMouseOut={videoHoverOff}
                         autoPlay
-                        style={{width: '600px', border: '20px solid #e0cc84' }}
+                        style={{border: '20px solid #e0cc84' }}
                         className='
-                                {/*lg:w-[600px]*/}
+                                video__observer-styles
                                 h-[300px]
                                 md:h-[400px]
                                 lg:h-[528px]
@@ -133,7 +138,7 @@ const Chef = () => {
             {/*></video>*/}
             {/*<StarsCanvas2 />*/}
 
-        </div>
+        </Div100vh>
 
     );
 }

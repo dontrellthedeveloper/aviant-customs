@@ -23,10 +23,12 @@ const itemVariants = {
 const Splash = () => {
     const [fadeElement, setFadeElement] = useState(true);
     const [showElement, setShowElement] = useState(true);
+    const [showScrollbar, setShowScrollbar] = useState(false)
     const [visible, setVisible] = useState(true);
 
     const removeElement = () => {
         setVisible((prev) => !prev);
+        setShowScrollbar((prev) =>!prev)
     };
 
     useEffect(() => {
@@ -52,7 +54,7 @@ const Splash = () => {
 
     return (
 
-        <div>
+        <div id='splash'>
 
 
 
@@ -60,7 +62,7 @@ const Splash = () => {
             <AnimatePresence>
 
                     <div
-                        className={`${fadeElement ? "" : "fade-out-2 fade-2"} ${visible ? "" : "fade-out-2 fade-2"}   `}
+                        className={`${fadeElement ? "" : "fade-out-2 fade-2"} ${visible ? "" : "fade-out-2 fade-2"}  ${showScrollbar ? "scroll-bar__styles" : ""} `}
 
                     >
 
