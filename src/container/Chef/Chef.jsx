@@ -66,24 +66,31 @@ const Chef = () => {
 
     return (
         <Div100vh
-            // style={{height: '900px'}}
+            style={{borderTop: '5px solid rgb(224, 204, 132)'}}
+            className='app__bg '
         >
-            <div className="app__bg app__wrapper section__padding"
-                 style={{zIndex: -2, position: 'relative', borderTop: '5px solid rgb(224, 204, 132)'}}
-            >
-                <div className="app__wrapper_img app__wrapper_img-reverse" style={{zIndex: 10}}>
+            <div className="app__wrapper section__padding"
+                 style={{
+                     // zIndex: -2,
+                     position: 'relative',
 
-                    <video
-                        loop
-                        src={videoBg}
-                        ref={videoRef2}
-                        // onClick={onVideoPress}
-                        controls
-                        // onMouseOver={videoHoverOn}
-                        // onMouseOut={videoHoverOff}
-                        autoPlay
-                        style={{border: '20px solid #e0cc84' }}
-                        className='
+                     maxWidth: '1400px'
+            }}
+            >
+                {/*<div style={{display: 'flex', maxWidth: '1200px', margin: '0 auto'}}>*/}
+                    <div className="app__wrapper_img app__wrapper_img-reverse" style={{zIndex: 10}}>
+
+                        <video
+                            loop
+                            src={videoBg}
+                            ref={videoRef2}
+                            // onClick={onVideoPress}
+                            controls
+                            // onMouseOver={videoHoverOn}
+                            // onMouseOut={videoHoverOff}
+                            autoPlay
+                            style={{border: '15px solid #e0cc84' }}
+                            className='
                                 video__observer-styles
                                 h-[300px]
                                 md:h-[400px]
@@ -91,32 +98,39 @@ const Chef = () => {
                                 {/*w-[200px] */}
                                 w-full
                                 rounded-2xl cursor-pointer bg-gray-100'
-                    ></video>
-                    {/*<img src={images.jiggs} alt="chef_image" />*/}
-                </div>
-                <div className="app__wrapper_info">
-                    <SubHeading title="Chef's word"/>
-                    <h1 className="headtext__cormorant">What we believe in</h1>
+                        ></video>
+                        {/*<img src={images.jiggs} alt="chef_image" />*/}
+                    </div>
+                    <div className="app__wrapper_info">
+                        <SubHeading title="Chef's word"/>
+                        <h1 className="headtext__cormorant">What we believe in</h1>
 
-                    <div className="app__chef-content">
-                        <div className="app__chef-content_quote">
-                            <img src={images.quote} alt="quote_image"/>
-                            <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit
-                                .</p>
+                        <div className="app__chef-content">
+                            <div className="app__chef-content_quote">
+                                <img src={images.quote} alt="quote_image"/>
+                                <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit
+                                    .</p>
+                            </div>
+                            <p className="p__opensans"> auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                                Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis
+                                integer curabitur semper sit nunc. </p>
                         </div>
-                        <p className="p__opensans"> auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
-                            Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis
-                            integer curabitur semper sit nunc. </p>
-                    </div>
 
-                    <div className="app__chef-sign">
-                        <p>Kevin Luo</p>
-                        <p className="p__opensans">Chef & Founder</p>
-                        <img src={images.sign} alt="sign_image"/>
+                        <div className="app__chef-sign">
+                            <p>Moliere Neptune</p>
+                            <p className="p__opensans">CEO</p>
+                            <img src={images.sign} alt="sign_image"/>
+                        </div>
                     </div>
-                </div>
-                <StarsCanvas2 />
+                {/*</div>*/}
+
+
+
+
+
+
             </div>
+            <StarsCanvas2 />
             {/*<video*/}
             {/*    loop*/}
             {/*    src={videoBg}*/}

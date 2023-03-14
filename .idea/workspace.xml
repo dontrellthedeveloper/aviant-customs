@@ -2,18 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7683885f-776d-439f-98e4-af2a39e7da3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Gallery2/Gallery2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Gallery2/Gallery2.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Gallery3/Gallery3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Gallery3/Gallery3.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Gallery4/Gallery4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Gallery4/Gallery4.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Vid3/Vid3.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Vid3/Vid3.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Vid4/Vid4.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Vid4/Vid4.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Splash/Splash.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Splash/Splash.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Splash/Splash.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Splash/Splash.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SubHeading/SubHeading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubHeading/SubHeading.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/canvas/Stars.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Stars.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Chef/Chef.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Chef/Chef.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/Chef/Chef.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Chef/Chef.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Chef/Chef.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Chef/Chef.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Findus/FindUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Findus/FindUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Gallery/Gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Gallery/Gallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Gallery/Gallery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Gallery/Gallery.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Header/Header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +64,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/container" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
@@ -67,7 +82,7 @@
       <workItem from="1677825133366" duration="1816000" />
       <workItem from="1677906366419" duration="12053000" />
       <workItem from="1678077213574" duration="41559000" />
-      <workItem from="1678669817293" duration="14008000" />
+      <workItem from="1678669817293" duration="39064000" />
     </task>
     <servers />
   </component>

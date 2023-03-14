@@ -5,6 +5,7 @@ import { images } from '../../constants';
 import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
 import videoBg from '../../assets/BRIANA_PRMO.mp4';
+import Div100vh from "react-div-100vh";
 
 const FindUs = () => {
     const [playing, setPlaying] = useState(false);
@@ -40,46 +41,54 @@ const FindUs = () => {
     }, [isVideoMuted]);
 
     return (
-        <div className="app__bg app__wrapper section__padding" style={{zIndex: '-2', position: 'relative'}}
+        <Div100vh
+            style={{borderTop: '5px solid rgb(224, 204, 132)'}}
+            className='app__bg '
+        >
+        <div className="app__wrapper section__padding" style={{
+            // zIndex: '-2',
+            position: 'relative',
+            maxWidth: '1400px'
+        }}
              id="contact">
-            <div className="app__wrapper_info">
-                <SubHeading title="Contact"/>
-                <h1 className="headtext__cormorant" style={{marginBottom: '3rem'}}>Find Us</h1>
-                <div className="app__wrapper-content">
-                    <p className="p__opensans">Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 75G</p>
-                    <p className="p__cormorant" style={{color: '#DCCA87', margin: '2rem 0'}}>Opening Hours</p>
-                    <p className="p__opensans">Mon - Fri: 10:00 am - 02:00 am</p>
-                    <p className="p__opensans">Sat - Sun: 10:00 am - 03:00 am</p>
+            {/*<div style={{display: 'flex', margin: '0 auto'}}>*/}
+
+                <div className="app__wrapper_info">
+                    <SubHeading title="Contact"/>
+                    <h1 className="headtext__cormorant" style={{marginBottom: '3rem'}}>Find Us</h1>
+                    <div className="app__wrapper-content">
+                        <p className="p__opensans">Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 75G</p>
+                        <p className="p__cormorant" style={{color: '#DCCA87', margin: '2rem 0'}}>Opening Hours</p>
+                        <p className="p__opensans">Mon - Fri: 10:00 am - 02:00 am</p>
+                        <p className="p__opensans">Sat - Sun: 10:00 am - 03:00 am</p>
+                    </div>
+                    <button type="button" className="custom__button" style={{marginTop: '2rem'}}>Visit Us</button>
                 </div>
-                <button type="button" className="custom__button" style={{marginTop: '2rem'}}>Visit Us</button>
-            </div>
 
-            {/*<div className="app__wrapper_img">*/}
-            {/*    <img src={images.findus} alt="finus_img"/>*/}
+                <video
+                    loop
+                    src={videoBg}
+                    ref={videoRef2}
+                    // onClick={onVideoPress}
+                    controls
+                    // onMouseOver={videoHoverOn}
+                    // onMouseOut={videoHoverOff}
+                    autoPlay
+                    style={{width: '350px', border: '15px solid #e0cc84', zIndex: 10 }}
+                    className='
+                                    {/*lg:w-[600px]*/}
+                                    h-[300px]
+                                    md:h-[400px]
+                                    lg:h-[528px]
+                                    {/*w-[200px] */}
+                                    w-full
+                                    rounded-2xl cursor-pointer bg-gray-100'
+                ></video>
             {/*</div>*/}
-
-            <video
-                loop
-                src={videoBg}
-                ref={videoRef2}
-                // onClick={onVideoPress}
-                controls
-                // onMouseOver={videoHoverOn}
-                // onMouseOut={videoHoverOff}
-                autoPlay
-                style={{width: '350px', border: '20px solid #e0cc84' }}
-                className='
-                                {/*lg:w-[600px]*/}
-                                h-[300px]
-                                md:h-[400px]
-                                lg:h-[528px]
-                                {/*w-[200px] */}
-                                w-full
-                                rounded-2xl cursor-pointer bg-gray-100'
-            ></video>
-
             <StarsCanvas2/>
+
         </div>
+        </Div100vh>
     );
 }
 

@@ -1,15 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {MdOutlineRestaurantMenu} from 'react-icons/md';
 
 import images from '../../constants/images';
 
-import './Navbar.css';
+import './Navbar.scss';
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = React.useState(false);
-  return (
-    <nav className="app__navbar">
+  const [toggleMenu, setToggleMenu] = useState(false);
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setScroll(window.scrollY > 20);
+        });
+    }, []);
+
+
+    return (
+    <nav className={scroll ? 'app__navbar-scroll' : 'app__navbar'}>
       <div className="app__navbar-logo">
         <img src={images.logo2} alt="app__logo" />
       </div>
@@ -20,11 +29,11 @@ const Navbar = () => {
         <li className="p__opensans"><a href="#awards">Awards</a></li>
         <li className="p__opensans"><a href="#contact">Contact</a></li>
       </ul>
-      <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">Log In / Registration</a>
-        <div />
-        <a href="/" className="p__opensans">Book Table</a>
-      </div>
+      {/*<div className="app__navbar-login">*/}
+      {/*  <a href="#login" className="p__opensans">Log In / Registration</a>*/}
+      {/*  <div />*/}
+      {/*  <a href="/" className="p__opensans">Book Table</a>*/}
+      {/*</div>*/}
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
