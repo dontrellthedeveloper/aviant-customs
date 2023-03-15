@@ -21,7 +21,7 @@ const Gallery = () => {
     return (
 
         <div className="app__gallery flex__center section__padding"
-             style={{borderTop: '5px solid rgb(224, 204, 132)'}}
+             style={{borderTop: '1px solid rgb(224, 204, 132)'}}
         >
             {/*<div style={{display: 'flex', maxWidth: '1200px', margin: '0 auto'}}>*/}
             <div className="app__gallery-content" >

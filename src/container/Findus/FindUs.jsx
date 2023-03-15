@@ -42,7 +42,7 @@ const FindUs = () => {
 
     return (
         <Div100vh
-            style={{borderTop: '5px solid rgb(224, 204, 132)'}}
+            style={{borderTop: '1px solid rgb(224, 204, 132)'}}
             className='app__bg '
         >
         <div className="app__wrapper section__padding" style={{

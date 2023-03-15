@@ -46,9 +46,11 @@ const App = () => (
     {/*<Laurels />*/}
 
 
-      <div style={{position: "relative", zIndex: '0'}}>
-           <Footer />
-          <StarsCanvas/>
+      <div style={{position: "relative",
+          // zIndex: '0'
+      }}>
+           {/*<Footer />*/}
+          {/*<StarsCanvas/>*/}
       </div>
   </div>
 );
