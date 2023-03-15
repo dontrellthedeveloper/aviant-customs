@@ -132,7 +132,11 @@ const Chef = () => {
 
 
             </div>
-            <StarsCanvas2 />
+
+
+            {/*<StarsCanvas2 />*/}
+
+
             {/*<video*/}
             {/*    loop*/}
             {/*    src={videoBg}*/}

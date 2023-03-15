@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useLayoutEffect, useState} from 'react';
 
 import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
 import { Navbar } from './components';
@@ -12,47 +12,73 @@ import Vid3 from "./container/Vid3/Vid3";
 import Vid4 from "./container/Vid4/Vid4";
 import Vid5 from "./container/Vid5/Vid5";
 
-const App = () => (
-  <div>
-    <Splash/>
-    <Navbar />
-    <Header />
-      {/*<Gallery4 />*/}
-      <div style={{position: "relative"}}>
-          <Chef />
-      </div>
-      <Gallery2 />
-      <div style={{position: "relative"}}>
-      <Vid5 />
-      </div>
-      <Gallery3 />
-      <div style={{position: "relative"}}>
-          <Vid3 />
-      </div>
-      <Gallery />
-      <div style={{position: "relative"}}>
-          <Vid4 />
-      </div>
-      {/*<SpecialMenu />*/}
-      <div style={{position: "relative", zIndex: '0'}}>
-          <AboutUs />
+const App = () => {
+    const [splashOff, setSplashOff] = useState(true);
 
-      </div>
+    useLayoutEffect(() => {
+        const resolution = window.innerWidth;
+        const isMobile = resolution >= 320 && resolution <= 480;
 
 
+        console.log(isMobile)
+        const isTablet = resolution >= 768 && resolution <= 1024;
+        const isDesktop = !isMobile && !isTablet;
+
+        if (resolution < 1024) {
+            setSplashOff(false)
+            console.log(splashOff)
+        }
 
 
-    {/*<Intro />*/}
-    {/*<Laurels />*/}
+    }, [])
 
 
-      <div style={{position: "relative",
-          // zIndex: '0'
-      }}>
-           <Footer />
-          {/*<StarsCanvas/>*/}
-      </div>
-  </div>
-);
+    // useEffect(() => {
+    //     setSplashOff()
+    // })
+
+    return (
+        <div>
+            {splashOff && <Splash/>}
+            <Navbar />
+            <Header />
+            {/*<Gallery4 />*/}
+            <div style={{position: "relative"}}>
+                <Chef />
+            </div>
+            <Gallery2 />
+            <div style={{position: "relative"}}>
+                <Vid5 />
+            </div>
+            <Gallery3 />
+            <div style={{position: "relative"}}>
+                <Vid3 />
+            </div>
+            <Gallery />
+            <div style={{position: "relative"}}>
+                <Vid4 />
+            </div>
+            {/*<SpecialMenu />*/}
+            <div style={{position: "relative", zIndex: '0'}}>
+                <AboutUs />
+
+            </div>
+
+
+
+
+            {/*<Intro />*/}
+            {/*<Laurels />*/}
+
+
+            <div style={{position: "relative",
+                // zIndex: '0'
+            }}>
+                <Footer />
+                {/*<StarsCanvas/>*/}
+            </div>
+        </div>
+    );
+}
 
 export default App;

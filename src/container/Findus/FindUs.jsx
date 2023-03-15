@@ -108,7 +108,7 @@ const FindUs = () => {
                                     rounded-2xl cursor-pointer bg-gray-100'
                 ></video>
             {/*</div>*/}
-            <StarsCanvas2/>
+            {/*<StarsCanvas2/>*/}
 
         </div>
         </Div100vh>

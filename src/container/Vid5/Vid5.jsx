@@ -1,6 +1,6 @@
 
 
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef, useLayoutEffect} from 'react';
 
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
@@ -15,6 +15,18 @@ const Chef = () => {
     const [playing, setPlaying] = useState(false);
     const videoRef2 = useRef(null);
     const [isVideoMuted, setIsVideoMuted] = useState(false);
+
+
+    const [starsOff, setStarsOff] = useState(true);
+
+    useLayoutEffect(() => {
+        const resolution = window.innerWidth;
+
+        if (resolution < 1024) {
+            setStarsOff(false)
+        }
+    }, [])
+
 
 
     // const onVideoPress = () => {
@@ -134,27 +146,9 @@ const Chef = () => {
 
 
             </div>
-            <StarsCanvas2 />
-            {/*<video*/}
-            {/*    loop*/}
-            {/*    src={videoBg}*/}
-            {/*    ref={videoRef2}*/}
-            {/*    // onClick={onVideoPress}*/}
-            {/*    controls*/}
-            {/*    // onMouseOver={videoHoverOn}*/}
-            {/*    // onMouseOut={videoHoverOff}*/}
-            {/*    autoPlay*/}
-            {/*    style={{width: '600px', position: 'relative'}}*/}
-            {/*    className='*/}
-            {/*                    /!*lg:w-[600px]*!/*/}
-            {/*                    h-[300px]*/}
-            {/*                    md:h-[400px]*/}
-            {/*                    lg:h-[528px]*/}
-            {/*                    /!*w-[200px] *!/*/}
-            {/*                    w-full*/}
-            {/*                    rounded-2xl cursor-pointer bg-gray-100'*/}
-            {/*></video>*/}
-            {/*<StarsCanvas2 />*/}
+
+            {starsOff && <StarsCanvas2 />}
+
 
         </div>
 
