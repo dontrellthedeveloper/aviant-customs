@@ -68,6 +68,7 @@ const Chef = () => {
         <div
             style={{borderTop: '1px solid rgb(224, 204, 132)'}}
             className='app__bg '
+            id='chains'
         >
             <div className="app__wrapper section__padding"
                  style={{
@@ -102,7 +103,7 @@ const Chef = () => {
                     {/*<img src={images.jiggs} alt="chef_image" />*/}
                 </div>
                 <div className="app__wrapper_info">
-                    <SubHeading title="(Ex, 22in Diamond Pendant)"/>
+                    <SubHeading title="(Ex, 22in Chains)"/>
                     <h1 className="headtext__cormorant">(Video Title)</h1>
 
                     <div className="app__chef-content">

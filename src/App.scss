@@ -37,6 +37,20 @@ body::-webkit-scrollbar-track-piece
 }
 
 
+.splash__button {
+  background-color: black !important;
+  border: 2px solid var(--color-golden) !important;
+  color: var(--color-golden) !important;
+}
+
+.splash__button:hover {
+  background-color: var(--color-golden) !important;
+  border: 2px solid black !important;
+  color: black !important;
+}
+
+
+
 .video__styles {
   width: 350px;
 
@@ -108,9 +122,9 @@ body::-webkit-scrollbar-track-piece
     margin-top: 40px;
   }
 
-  @media(max-width: 550px) {
-      justify-content: flex-end;
-  }
+  //@media(max-width: 550px) {
+  //    justify-content: flex-end;
+  //}
 }
 
 .app__wrapper_img {
@@ -253,6 +267,11 @@ body::-webkit-scrollbar-track-piece
 
   .app__wrapper_img img {
     width: 360px;
+
+  }
+
+  .custom__mobile-header {
+    display: none;
   }
 }
 

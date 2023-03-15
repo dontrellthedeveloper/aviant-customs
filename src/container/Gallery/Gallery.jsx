@@ -4,6 +4,7 @@ import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import './Gallery.css';
+import {MdOutlinePhotoCamera} from "react-icons/md";
 
 const Gallery = () => {
     const scrollRef = React.useRef(null);
@@ -36,7 +37,7 @@ const Gallery = () => {
                     {[images.z1, images.z2, images.z3, images.zce4].map((image, index) => (
                         <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
                             <img src={image} alt="gallery_image" />
-                            <BsInstagram className="gallery__image-icon" />
+                            <MdOutlinePhotoCamera className="gallery__image-icon" />
                         </div>
                     ))}
                 </div>

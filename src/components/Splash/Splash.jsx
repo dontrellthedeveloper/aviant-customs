@@ -75,7 +75,7 @@ const Splash = () => {
 
                                 <h2 className='video-head-text'>
                                     {/*<button>Click To Enter</button>*/}
-                                    <button onClick={removeElement} type="button" className="custom__button" style={{backgroundColor: 'transparent', border: '2px solid #fff', color: '#fff'}}>Click To Enter</button>
+                                    <button onClick={removeElement} type="button" className="custom__button splash__button" style={{}}>Click To Enter</button>
                                 </h2>
                             </Div100vh>
                         </Div100vh>

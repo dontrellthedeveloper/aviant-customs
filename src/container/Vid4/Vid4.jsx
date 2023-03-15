@@ -68,6 +68,7 @@ const Chef = () => {
         <div
             style={{borderTop: '1px solid rgb(224, 204, 132)'}}
             className='app__bg '
+            id='rings'
         >
             <div className="app__wrapper section__padding"
                  style={{
@@ -103,7 +104,7 @@ const Chef = () => {
                 </div>
 
                 <div className="app__wrapper_info">
-                    <SubHeading title="(Ex, 22in Diamond Pendant)"/>
+                    <SubHeading title="(Ex, Rings)"/>
                     <h1 className="headtext__cormorant">(Video Title)</h1>
 
                     <div className="app__chef-content">

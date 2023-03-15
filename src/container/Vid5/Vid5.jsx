@@ -68,6 +68,7 @@ const Chef = () => {
         <div
             style={{borderTop: '1px solid rgb(224, 204, 132)'}}
             className='app__bg '
+            id="pendants"
         >
             <div className="app__wrapper section__padding"
                  style={{

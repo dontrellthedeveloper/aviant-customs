@@ -1,5 +1,7 @@
 import React from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import {TbListDetails} from 'react-icons/tb';
+import {MdOutlinePhotoCamera} from 'react-icons/md'
 
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
@@ -35,7 +37,7 @@ const Gallery = () => {
                     {[images.p1, images.p2, images.p3, images.p4].map((image, index) => (
                         <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
                             <img src={image} alt="gallery_image" />
-                            <BsInstagram className="gallery__image-icon" />
+                            <MdOutlinePhotoCamera className="gallery__image-icon" />
                         </div>
                     ))}
                 </div>
