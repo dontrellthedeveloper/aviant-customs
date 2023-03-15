@@ -1,8 +1,11 @@
 import React from 'react';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 
-import { meal } from '../../constants';
+// import { meal } from '../../constants';
 import './Intro.css';
+import videothumb from '../../assets/video_thumb.png'
+
+import videoBg from '../../assets/SPLASH_ANIMATION.mp4';
 
 const Intro = () => {
     const [playVideo, setPlayVideo] = React.useState(false);
@@ -12,7 +15,8 @@ const Intro = () => {
         <div className="app__video">
             <video
                 ref={vidRef}
-                src={meal}
+                src={videoBg}
+                poster={videothumb}
                 type="video/mp4"
                 loop
                 controls={false}

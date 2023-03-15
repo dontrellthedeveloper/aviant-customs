@@ -10,6 +10,7 @@ import Gallery3 from "./container/Gallery3/Gallery3";
 import Gallery4 from "./container/Gallery4/Gallery4";
 import Vid3 from "./container/Vid3/Vid3";
 import Vid4 from "./container/Vid4/Vid4";
+import Vid5 from "./container/Vid5/Vid5";
 
 const App = () => (
   <div>
@@ -22,7 +23,7 @@ const App = () => (
       </div>
       <Gallery2 />
       <div style={{position: "relative"}}>
-      <FindUs />
+      <Vid5 />
       </div>
       <Gallery3 />
       <div style={{position: "relative"}}>
@@ -41,7 +42,7 @@ const App = () => (
 
 
 
-    <Intro />
+    {/*<Intro />*/}
     {/*<Laurels />*/}
 
 
