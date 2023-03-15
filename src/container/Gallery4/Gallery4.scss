@@ -15,6 +15,16 @@
 
     min-width: 500px;
     padding-right: 2rem;
+
+    @media screen and (max-width: 1150px) {
+        align-items: center;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 767px) {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .app__gallery-content button {

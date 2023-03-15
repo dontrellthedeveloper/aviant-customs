@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { images } from '../../constants';
-import './AboutUs.css';
+import './AboutUs.scss';
 import StarsCanvas from "../../components/canvas/Stars2";
 import {SubHeading} from "../../components";
 
@@ -34,7 +34,7 @@ const AboutUs = () => (
                 <button type="button" className="custom__button">Know More</button>
             </div>
 
-            <div className="app__aboutus-content_knife flex__center" style={{height: '700px'}}>
+            <div className="app__aboutus-content_knife flex__center">
                 {/*<img src={images.knife} alt="about_knife" />*/}
             </div>
 

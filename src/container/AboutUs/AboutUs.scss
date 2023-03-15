@@ -26,10 +26,29 @@
     flex-direction: column;
 
     text-align: right;
+
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .app__aboutus-content_knife {
     margin: 2rem 14rem;
+    height: 700px;
+
+    @media screen and (max-width: 900px) {
+        height: 500px;
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 500px;
+    }
 }
 
 .app__aboutus-content_knife img {
@@ -44,6 +63,16 @@
     flex-direction: column;
 
     text-align: left;
+
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .app__aboutus-content_about p,

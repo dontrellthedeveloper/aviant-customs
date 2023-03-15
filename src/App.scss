@@ -37,6 +37,13 @@ body::-webkit-scrollbar-track-piece
 }
 
 
+.video__styles {
+  width: 350px;
+
+  @media screen and (max-width: 400px) {
+    width: 300px;
+  }
+}
 
 
 .stars__canvas-styles {
@@ -88,6 +95,22 @@ body::-webkit-scrollbar-track-piece
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+
+  @media screen and (max-width: 1150px) {
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  @media(max-width: 767px) {
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  @media(max-width: 550px) {
+      justify-content: flex-end;
+  }
 }
 
 .app__wrapper_img {
@@ -97,12 +120,31 @@ body::-webkit-scrollbar-track-piece
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    margin: 3rem 0 0 0 !important;
+  }
+
+  @media(max-width: 767px) {
+    width: 100%;
+    margin: 3rem 0 0 0 !important;
+  }
+
   /*margin-left: 2rem;*/
 }
 
 .app__wrapper_img-reverse {
   justify-content: flex-start;
   margin-right: 2rem;
+
+  @media screen and (max-width: 1150px) {
+    justify-content: center;
+  }
+
+  @media(max-width: 767px) {
+    justify-content: center;
+  }
+
 }
 
 .app__wrapper_img img {
@@ -143,6 +185,20 @@ body::-webkit-scrollbar-track-piece
   text-transform: capitalize;
   line-height: 28px;
   font-size: 16px;
+
+  @media screen and (max-width: 1150px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 14px;
+  }
+
+
 }
 
 .headtext__cormorant {
@@ -196,7 +252,7 @@ body::-webkit-scrollbar-track-piece
   }
 
   .app__wrapper_img img {
-    width: 100%;
+    width: 360px;
   }
 }
 
@@ -215,9 +271,7 @@ body::-webkit-scrollbar-track-piece
     font-size: 21px;
   }
 
-  .p__opensans {
-    font-size: 14px;
-  }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -232,5 +286,15 @@ body::-webkit-scrollbar-track-piece
   .headtext__cormorant {
     font-size: 45px;
     line-height: 70px;
+  }
+
+  .app__wrapper_img img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .app__wrapper_img img {
+    width: 280px;
   }
 }

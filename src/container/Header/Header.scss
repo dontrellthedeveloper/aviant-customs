@@ -57,6 +57,22 @@
     text-transform: capitalize;
     line-height: 117px;
     font-size: 90px;
+
+    @media screen and (max-width: 1150px) {
+        font-size: 55px;
+        line-height: 87px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 55px;
+        line-height: 87px;
+    }
+}
+
+.subheading__m {
+    @media screen and (max-width: 550px) {
+        display: none;
+    }
 }
 
 .app__header-img img {
@@ -70,18 +86,18 @@
     }
 }
 
-@media screen and (max-width: 1150px) {
-    .app__header-h1 {
-        font-size: 90px;
-    }
-}
+//@media screen and (max-width: 1150px) {
+//    .app__header-h1 {
+//        font-size: 90px;
+//    }
+//}
 
-@media screen and (max-width: 650px) {
-    .app__header-h1 {
-        font-size: 70px;
-        line-height: 87px;
-    }
-}
+//@media screen and (max-width: 650px) {
+//    .app__header-h1 {
+//        font-size: 70px;
+//        line-height: 87px;
+//    }
+//}
 
 @media screen and (max-width: 450px) {
     .app__header-h1 {

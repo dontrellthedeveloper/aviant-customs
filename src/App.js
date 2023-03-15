@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
 import { Navbar } from './components';
-import './App.css';
+import './App.scss';
 import Splash from "./components/Splash/Splash";
 import StarsCanvas from "./components/canvas/Stars";
 import Gallery2 from "./container/Gallery2/Gallery2";
@@ -49,7 +49,7 @@ const App = () => (
       <div style={{position: "relative",
           // zIndex: '0'
       }}>
-           {/*<Footer />*/}
+           <Footer />
           {/*<StarsCanvas/>*/}
       </div>
   </div>

@@ -106,11 +106,11 @@ const Chef = () => {
                         <h1 className="headtext__cormorant">(Video Title)</h1>
 
                         <div className="app__chef-content">
-                            <div className="app__chef-content_quote">
-                                <img src={images.quote} alt="quote_image"/>
-                                <p className="p__opensans">(Optional Quote)
-                                    .</p>
-                            </div>
+                            {/*<div className="app__chef-content_quote">*/}
+                            {/*    <img src={images.quote} alt="quote_image"/>*/}
+                            {/*    <p className="p__opensans">(Optional Quote)*/}
+                            {/*        .</p>*/}
+                            {/*</div>*/}
                             <p className="p__opensans"> (Give a brief description of the jewelery piece in the video.) </p>
                         </div>
 
