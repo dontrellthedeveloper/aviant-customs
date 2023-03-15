@@ -9,6 +9,7 @@ import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
 import videoBg from '../../assets/P-TENNIS.mp4';
 import Div100vh from 'react-div-100vh'
+import videothumb from "../../assets/chainsthumb.png";
 
 const Chef = () => {
     const [playing, setPlaying] = useState(false);
@@ -87,6 +88,7 @@ const Chef = () => {
                         ref={videoRef2}
                         // onClick={onVideoPress}
                         controls
+                        poster={videothumb}
                         // onMouseOver={videoHoverOn}
                         // onMouseOut={videoHoverOff}
                         autoPlay

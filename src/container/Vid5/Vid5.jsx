@@ -9,6 +9,7 @@ import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
 import videoBg from '../../assets/BRIANA_PRMO.mp4';
 import Div100vh from 'react-div-100vh'
+import videothumb from "../../assets/briannathumb.png";
 
 const Chef = () => {
     const [playing, setPlaying] = useState(false);
@@ -85,6 +86,7 @@ const Chef = () => {
                         loop
                         src={videoBg}
                         ref={videoRef2}
+                        poster={videothumb}
                         // onClick={onVideoPress}
                         controls
                         // onMouseOver={videoHoverOn}

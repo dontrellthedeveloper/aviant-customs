@@ -42,6 +42,10 @@ import z1 from '../assets/z1.jpg';
 import z2 from '../assets/z2.jpg';
 import z3 from '../assets/z3.jpg';
 import z4 from '../assets/z4.jpg';
+import ringsthumb from '../assets/ringsthumb.png';
+import chainsthumb from '../assets/chainsthumb.png';
+import briannathumb from '../assets/briannathumb.png';
+import priyathumb from '../assets/priyathumb.png';
 
 export default {
   bg,
@@ -87,6 +91,10 @@ export default {
   z1,
   z2,
   z3,
-  z4
+  z4,
+  ringsthumb,
+  chainsthumb,
+  briannathumb,
+  priyathumb
 
 };
