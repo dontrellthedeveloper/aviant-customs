@@ -1,6 +1,6 @@
 
 
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef, useLayoutEffect} from 'react';
 
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
@@ -17,25 +17,15 @@ const Chef = () => {
     const [isVideoMuted, setIsVideoMuted] = useState(false);
 
 
-    // const onVideoPress = () => {
-    //     if (playing) {
-    //         videoRef2?.current?.pause();
-    //         setPlaying(false);
-    //     } else {
-    //         videoRef2?.current?.play();
-    //         setPlaying(true);
-    //     }
-    // }
+    const [starsOff, setStarsOff] = useState(true);
 
-    // const videoHoverOn = () => {
-    //     videoRef2?.current?.play();
-    //     setPlaying(true);
-    // };
-    //
-    // const videoHoverOff = () => {
-    //     videoRef2?.current?.pause();
-    //     setPlaying(false);
-    // }
+    useLayoutEffect(() => {
+        const resolution = window.innerWidth;
+
+        if (resolution < 1024) {
+            setStarsOff(false)
+        }
+    }, [])
 
     useEffect(() => {
         let options = {
@@ -134,7 +124,7 @@ const Chef = () => {
             </div>
 
 
-            {/*<StarsCanvas2 />*/}
+            {starsOff && <StarsCanvas2 />}
 
 
             {/*<video*/}

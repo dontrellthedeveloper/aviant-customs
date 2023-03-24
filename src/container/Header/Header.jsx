@@ -20,8 +20,8 @@ const Header = () => {
     }, [])
 
     return (
-        <Div100vh className='app__header'>
-            <Div100vh className=" app__wrapper section__padding"
+        <div className='app__header' style={{height: '100vh'}}>
+            <div className=" app__wrapper section__padding"
                       style={{maxWidth: '1400px'}}
                       id="home">
 
@@ -45,10 +45,10 @@ const Header = () => {
                 <div className="app__wrapper_img custom__mobile-header" style={{flexDirection: 'column', zIndex: '5'}}>
                     <img src={images.jiggs} alt="header_img" />
                 </div>
-            </Div100vh>
+            </div>
             {starsOff && <StarsCanvas/>}
 
-        </Div100vh>
+        </div>
 
     );
 

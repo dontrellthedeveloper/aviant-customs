@@ -39,7 +39,8 @@ const App = () => {
 
     return (
         <div>
-            {splashOff && <Splash/>}
+            {/*{splashOff && <Splash/>}*/}
+            <Splash/>
             <Navbar />
             <Header />
             {/*<Gallery4 />*/}
