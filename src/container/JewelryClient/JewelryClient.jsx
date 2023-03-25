@@ -1,25 +1,18 @@
-import React, {useState, useEffect, useRef, useLayoutEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
-// import './Chef.scss';
-import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
-import videoBg from '../../assets/PRIYA_REEL.mp4';
-import Div100vh from 'react-div-100vh'
-import videothumb from "../../assets/priyathumb.png";
 import { HiVolumeUp, HiVolumeOff } from 'react-icons/hi';
 import { BsFillPlayFill, BsFillPauseFill } from 'react-icons/bs';
-
-import {urlFor, client} from "../../client";
 import JewelryGallery from "../JewelryGallery/JewelryGallery";
+
 
 const JewelryClient = ({jewel}) => {
 
     const [playing, setPlaying] = useState(false);
     const [isHover, setIsHover] = useState(false);
     const videoRef2 = useRef(null);
-    // const videoRef = useRef(null);
     const [isVideoMuted, setIsVideoMuted] = useState(false);
     const [videoMobile, setVideoMobile] = useState(false)
 
@@ -132,14 +125,13 @@ const JewelryClient = ({jewel}) => {
                                     // onMouseOut={videoHoverOff}
                                     // autoPlay
                                     style={{border: '15px solid #e0cc84' }}
-                                    className='
-                                    video__observer-styles
+                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'}
                                     h-[300px]
                                     md:h-[400px]
                                     lg:h-[528px]
                                     {/*w-[200px] */}
                                     w-full
-                                    rounded-2xl cursor-pointer bg-gray-100'
+                                    rounded-2xl cursor-pointer bg-gray-100`}
                                 ></video>
                             }
 
@@ -156,14 +148,13 @@ const JewelryClient = ({jewel}) => {
                                     // onMouseOut={videoHoverOff}
                                     // autoPlay
                                     style={{border: '15px solid #e0cc84' }}
-                                    className='
-                                    video__observer-styles
+                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'}
                                     h-[300px]
                                     md:h-[400px]
                                     lg:h-[528px]
                                     {/*w-[200px] */}
                                     w-full
-                                    rounded-2xl cursor-pointer bg-gray-100'
+                                    rounded-2xl cursor-pointer bg-gray-100`}
                                 ></video>
                             }
 

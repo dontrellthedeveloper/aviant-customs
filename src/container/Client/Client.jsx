@@ -9,8 +9,9 @@ const Client = () => {
 
 
     useEffect(() => {
-        client.fetch(`*[_type == "jewelry"]{
+        client.fetch(`*[_type == "jewelry"] | order(orderRank) {
             name,
+            title,
             _id,
             caption,
             description,
@@ -20,6 +21,7 @@ const Client = () => {
             bio2,
             vidReverse,
             galleryReverse,
+            vidPortrait,
             thumbnail{
                 asset->{
                     _id,

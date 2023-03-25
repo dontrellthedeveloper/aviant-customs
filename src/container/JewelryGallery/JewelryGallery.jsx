@@ -93,11 +93,10 @@ const Gallery = ({jewel}) => {
 
     return (
         <>
-            {jewelry.map((jewel, index) =>
-                (
+            {/*{jewelry.map((jewel, index) =>*/}
+            {/*    (*/}
         <div className={`app__gallery gallery__direction flex__center section__padding ${jewel.galleryReverse ? 'reverse' : ''} `}
              style={{borderTop: '1px solid rgb(224, 204, 132)'}}
-             key={jewel.name + index}
         >
             {/*<div style={{display: 'flex', maxWidth: '1200px', margin: '0 auto'}}>*/}
             <div className="app__gallery-images">
@@ -138,7 +137,7 @@ const Gallery = ({jewel}) => {
 
             {/*</div>*/}
         </div>
-            ))}
+            {/*))}*/}
         </>
     );
 };

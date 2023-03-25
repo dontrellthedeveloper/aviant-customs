@@ -1,12 +1,11 @@
 import {orderRankField, orderRankOrdering} from "@sanity/orderable-document-list";
 
 export default {
-    name: 'jewelry',
+    name: 'about',
     type: 'document',
-    title: 'Jewelry Client',
+    title: 'About Us',
     orderings: [orderRankOrdering],
     fields: [
-
         {
             name: 'title',
             type: 'string',
