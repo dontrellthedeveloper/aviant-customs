@@ -60,3 +60,23 @@
     }
 }
 
+.video__play-styles {
+    position: absolute;
+    //bottom: 1.5rem;
+    cursor: pointer;
+    //left: 1rem;
+    display: flex;
+    gap: 5rem;
+    padding: 0.75rem;
+
+}
+
+
+.video__text-styles {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 3.5rem;
+    line-height: 2rem;
+}
+

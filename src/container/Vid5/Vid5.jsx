@@ -51,6 +51,7 @@ const Chef = () => {
 
     useEffect(() => {
         let options = {
+            // root: document.body,
             rootMargin: "0px",
             // threshold: [0.25, 0.75]
             threshold: [0.90, 1]
@@ -103,7 +104,7 @@ const Chef = () => {
                         controls
                         // onMouseOver={videoHoverOn}
                         // onMouseOut={videoHoverOff}
-                        autoPlay
+                        // autoPlay
                         style={{border: '15px solid #e0cc84' }}
                         className='
                                 video__styles

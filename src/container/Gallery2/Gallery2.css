@@ -144,3 +144,37 @@
         height: 320px;
     }
 }
+
+
+
+#lightbox {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*optional bg color*/
+    background-color: rgba(0, 0, 0, 0.82);
+    /*the following isn't necessary but will help center everything once we add buttons*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox-img {
+    height: 80vh;
+    max-width: 90vw;
+    object-fit: cover;
+}
+
+.lightbox-button {
+    color: black;
+    border: 2px solid var(--color-golden);
+    background-color: var(--color-golden);
+    font-size: 2rem;
+
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

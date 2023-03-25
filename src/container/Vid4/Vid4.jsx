@@ -29,6 +29,7 @@ const Chef = () => {
 
     useEffect(() => {
         let options = {
+            // root: document.body,
             rootMargin: "0px",
             // threshold: [0.25, 0.75]
             threshold: [0.90, 1]
