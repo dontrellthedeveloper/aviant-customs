@@ -10,14 +10,35 @@ import StarsCanvas2 from "../../components/canvas/Stars2";
 import videoBg from '../../assets/STAN-RING.mp4';
 import Div100vh from 'react-div-100vh'
 import videothumb from "../../assets/ringsthumb.png";
+import {BsFillPauseFill, BsFillPlayFill} from "react-icons/bs";
+import {HiVolumeOff, HiVolumeUp} from "react-icons/hi";
 
 const Chef = () => {
     const [playing, setPlaying] = useState(false);
     const videoRef2 = useRef(null);
     const [isVideoMuted, setIsVideoMuted] = useState(false);
 
+    const [videoMobile, setVideoMobile] = useState(false)
 
     const [starsOff, setStarsOff] = useState(true);
+
+    const onVideoPress = () => {
+        if (playing) {
+            videoRef2?.current?.pause();
+            setPlaying(false);
+        } else {
+            videoRef2?.current?.play();
+            setPlaying(true);
+        }
+    }
+
+    useEffect(() => {
+        const resolution = window.innerWidth;
+
+        if (resolution < 1024) {
+            setVideoMobile(true)
+        }
+    }, [])
 
     useLayoutEffect(() => {
         const resolution = window.innerWidth;
@@ -28,33 +49,37 @@ const Chef = () => {
     }, [])
 
     useEffect(() => {
-        let options = {
-            // root: document.body,
-            rootMargin: "0px",
-            // threshold: [0.25, 0.75]
-            threshold: [0.90, 1]
-        };
+        const resolution = window.innerWidth;
 
-        let handlePlay = (entries, observe) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    videoRef2?.current?.play();
-                } else {
-                    videoRef2?.current?.pause();
-                }
-            });
-        };
+        if (resolution > 1023) {
+            let options = {
+                // root: document.body,
+                rootMargin: "0px",
+                // threshold: [0.25, 0.75]
+                threshold: [0.90, 1]
+            };
 
-        let observer = new IntersectionObserver(handlePlay, options);
+            let handlePlay = (entries, observe) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        videoRef2?.current?.play();
+                    } else {
+                        videoRef2?.current?.pause();
+                    }
+                });
+            };
 
-        observer.observe(videoRef2?.current);
+            let observer = new IntersectionObserver(handlePlay, options);
+
+            observer.observe(videoRef2?.current);
+        }
     });
 
-    useEffect(() => {
-        if (videoRef2?.current) {
-            videoRef2.current.muted = isVideoMuted;
-        }
-    }, [isVideoMuted]);
+    // useEffect(() => {
+    //     if (videoRef2?.current) {
+    //         videoRef2.current.muted = isVideoMuted;
+    //     }
+    // }, [isVideoMuted]);
 
     return (
         <div
@@ -73,16 +98,17 @@ const Chef = () => {
                 {/*<div style={{display: 'flex', maxWidth: '1200px', margin: '0 auto'}}>*/}
                 <div className="app__wrapper_img app__wrapper_img-reverse" style={{zIndex: 10}}>
 
+                    {videoMobile &&
                     <video
                         loop
                         src={videoBg}
                         ref={videoRef2}
-                        // onClick={onVideoPress}
-                        controls
+                        onClick={onVideoPress}
+                        // controls
                         poster={videothumb}
                         // onMouseOver={videoHoverOn}
                         // onMouseOut={videoHoverOff}
-                        autoPlay
+                        // autoPlay
                         style={{border: '15px solid #e0cc84' }}
                         className='
                                 video__styles
@@ -93,7 +119,58 @@ const Chef = () => {
                                 w-full
                                 rounded-2xl cursor-pointer bg-gray-100'
                     ></video>
-                    {/*<img src={images.jiggs} alt="chef_image" />*/}
+                    }
+
+                    {!videoMobile &&
+                        <video
+                            loop
+                            src={videoBg}
+                            ref={videoRef2}
+                            // onClick={onVideoPress}
+                            muted
+                            controls
+                            poster={videothumb}
+                            // onMouseOver={videoHoverOn}
+                            // onMouseOut={videoHoverOff}
+                            // autoPlay
+                            style={{border: '15px solid #e0cc84' }}
+                            className='
+                                video__styles
+                                h-[300px]
+                                md:h-[400px]
+                                lg:h-[528px]
+                                {/*w-[200px] */}
+                                w-full
+                                rounded-2xl cursor-pointer bg-gray-100'
+                        ></video>
+                    }
+
+                    {videoMobile && (
+                        <div className="
+
+                            video__play-styles"
+                        >
+                            {playing ? (
+                                <button style={{display: 'none'}} className='video__text-styles' onClick={onVideoPress}>
+                                    <BsFillPauseFill className='' />
+                                </button>
+                            ) : (
+                                <button  className='video__text-styles' onClick={onVideoPress}>
+                                    <BsFillPlayFill className='' />
+                                </button>
+                            )}
+                            {isVideoMuted ? (
+                                <button className='video__text-styles' onClick={() => setIsVideoMuted(false)}>
+                                    <HiVolumeOff className='' />
+                                </button>
+                            ) : (
+                                <button style={{display: 'none'}} className='video__text-styles' onClick={() => setIsVideoMuted(true)}>
+                                    <HiVolumeUp className='' />
+                                </button>
+                            )}
+                        </div>
+                    )}
+
                 </div>
 
                 <div className="app__wrapper_info">

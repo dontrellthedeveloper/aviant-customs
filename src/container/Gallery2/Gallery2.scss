@@ -189,10 +189,11 @@
 }
 
 .lightbox-button {
-    color: black;
+    color: var(--color-golden);
     border: 2px solid var(--color-golden);
-    background-color: var(--color-golden);
+    background-color: black;
     font-size: 2rem;
+    cursor: pointer;
 
     margin: 10px;
     padding-left: 10px;

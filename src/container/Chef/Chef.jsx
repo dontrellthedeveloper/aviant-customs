@@ -144,7 +144,7 @@ const Chef = () => {
                                 loop
                                 src={videoBg}
                                 ref={videoRef2}
-                                onClick={onVideoPress}
+                                // onClick={onVideoPress}
                                 muted
                                 controls
                                 poster={videothumb}

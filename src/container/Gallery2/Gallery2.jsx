@@ -43,7 +43,9 @@ const Gallery = () => {
         e.stopPropagation()
         let currentIndex = imagesG.indexOf(imageToShow)
         if(currentIndex >= imagesG.length - 1) {
-            setLightBoxDisplay(false)
+            // setLightBoxDisplay(false)
+            let nextImage = imagesG[0]
+            setImageToShow(nextImage)
         }
         else {
             let nextImage = imagesG[currentIndex + 1]
@@ -55,7 +57,9 @@ const Gallery = () => {
         e.stopPropagation()
         let currentIndex = imagesG.indexOf(imageToShow)
         if(currentIndex <= 0) {
-            setLightBoxDisplay(false)
+            // setLightBoxDisplay(false)
+            let nextImage = imagesG[imagesG.length - 1]
+            setImageToShow(nextImage)
         }
         else {
             let nextImage = imagesG[currentIndex - 1]
@@ -71,12 +75,6 @@ const Gallery = () => {
              style={{borderTop: '1px solid rgb(224, 204, 132)'}}
         >
             {/*<div style={{display: 'flex', maxWidth: '1200px', margin: '0 auto'}}>*/}
-            <div className="app__gallery-content">
-                <SubHeading title="Priya Piece" />
-                <h1 className="headtext__cormorant">Photo Gallery</h1>
-                <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>(Here is where you can enter a description.)</p>
-                <button type="button" className="custom__button">View More</button>
-            </div>
             <div className="app__gallery-images">
                 <div className="app__gallery-images_container" ref={scrollRef}>
                     {imagesG.map((image, index) => (
@@ -91,6 +89,13 @@ const Gallery = () => {
                     <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll('right')} />
                 </div>
             </div>
+            <div className="app__gallery-content" style={{alignItems: 'flex-end'}}>
+                <SubHeading title="Priya Piece" />
+                <h1 className="headtext__cormorant">Photo Gallery</h1>
+                <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>(Here is where you can enter a description.)</p>
+                <button type="button" className="custom__button">View More</button>
+            </div>
+
 
             { lightboxDisplay ?
                 <div id="lightbox" onClick={hideLightBox}>

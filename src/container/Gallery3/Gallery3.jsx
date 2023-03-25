@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { SubHeading } from '../../components';
@@ -7,6 +7,12 @@ import './Gallery3.css';
 import {MdOutlinePhotoCamera} from "react-icons/md";
 
 const Gallery = () => {
+
+    const imagesG = [images.f1, images.f2, images.f3, images.f4];
+
+    const [lightboxDisplay, setLightBoxDisplay] = useState(false);
+    const [imageToShow, setImageToShow] = useState('')
+
     const scrollRef = React.useRef(null);
 
     const scroll = (direction) => {
@@ -18,6 +24,45 @@ const Gallery = () => {
             current.scrollLeft += 300;
         }
     };
+
+
+
+    const showImage = (image) => {
+        //set imageToShow to be the one that's been clicked on
+        setImageToShow(image);
+        //set lightbox visibility to true
+        setLightBoxDisplay(true);
+    };
+
+    const hideLightBox = () => {
+        setLightBoxDisplay(false)
+    }
+
+    const showNext = (e) => {
+        e.stopPropagation()
+        let currentIndex = imagesG.indexOf(imageToShow)
+        if(currentIndex >= imagesG.length - 1) {
+            let nextImage = imagesG[0]
+            setImageToShow(nextImage)
+        }
+        else {
+            let nextImage = imagesG[currentIndex + 1]
+            setImageToShow(nextImage)
+        }
+    }
+
+    const showPrev = (e) => {
+        e.stopPropagation()
+        let currentIndex = imagesG.indexOf(imageToShow)
+        if(currentIndex <= 0) {
+            let nextImage = imagesG[imagesG.length - 1]
+            setImageToShow(nextImage)
+        }
+        else {
+            let nextImage = imagesG[currentIndex - 1]
+            setImageToShow(nextImage)
+        }
+    }
 
     return (
 
@@ -33,10 +78,10 @@ const Gallery = () => {
             </div>
             <div className="app__gallery-images">
                 <div className="app__gallery-images_container" ref={scrollRef}>
-                    {[images.f1, images.f2, images.f3, images.f4].map((image, index) => (
+                    {imagesG.map((image, index) => (
                         <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
-                            <img src={image} alt="gallery_image" />
-                            <MdOutlinePhotoCamera className="gallery__image-icon" />
+                            <img src={image} onClick={() => showImage(image)} alt="gallery_image" />
+                            <MdOutlinePhotoCamera onClick={() => showImage(image)} className="gallery__image-icon" />
                         </div>
                     ))}
                 </div>
@@ -47,6 +92,19 @@ const Gallery = () => {
             </div>
 
 
+            { lightboxDisplay ?
+                <div id="lightbox" onClick={hideLightBox}>
+
+
+                    <button className='lightbox-button' onClick={showPrev}>⭠</button>
+
+                    <img id="lightbox-img" src={imageToShow}></img>
+
+
+                    <button className='lightbox-button' onClick={showNext}>⭢</button>
+                </div>
+                : ''
+            }
 
 
 
