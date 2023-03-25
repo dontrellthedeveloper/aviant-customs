@@ -5,7 +5,7 @@ import {MdOutlinePhotoCamera} from 'react-icons/md'
 
 import { SubHeading } from '../../components';
 import { images } from '../../constants';
-import './Gallery2.css';
+import './Gallery2.scss';
 
 
 

@@ -166,6 +166,26 @@
     height: 80vh;
     max-width: 90vw;
     object-fit: cover;
+
+    @media screen and (max-width: 700px) {
+        height: 60vh;
+        max-width: 60vw;
+    }
+
+    @media screen and (max-width: 550px) {
+        height: 50vh;
+        max-width: 50vw;
+    }
+
+    @media screen and (max-width: 450px) {
+        height: 50vh;
+        max-width: 80vw;
+    }
+
+    @media screen and (max-width: 350px) {
+        height: 50vh;
+        max-width: 80vw;
+    }
 }
 
 .lightbox-button {
@@ -177,4 +197,24 @@
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
+
+    @media screen and (max-width: 700px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding-left: 2px;
+        padding-right: 2px;
+        margin: 5px;
+        font-size: 1.1rem;
+    }
+
+
+    @media screen and (max-width: 350px) {
+        padding-left: 2px;
+        padding-right: 2px;
+        margin: 2px;
+        font-size: 1rem;
+    }
 }
