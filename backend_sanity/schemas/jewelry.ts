@@ -19,12 +19,9 @@ export default {
             type: 'string',
         },
         {
-            name: 'thumbnail',
-            title: 'Thumbnail',
-            type: 'image',
-            options: {
-                hotspot: true,
-            },
+            title: 'Check this Box if the video should be after text',
+            name: 'vidReverse',
+            type: 'boolean',
         },
         {
             name: 'video',
@@ -34,6 +31,16 @@ export default {
                 hotspot: true,
             },
         },
+        {
+            name: 'thumbnail',
+            title: 'Thumbnail',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
+
+
         {
             name: 'galleryTitle',
             type: 'string',
@@ -48,6 +55,11 @@ export default {
             name: 'galleryCaption',
             type: 'string',
             title: 'Gallery Caption'
+        },
+        {
+            title: 'Check this Box if the Gallery should be after text',
+            name: 'galleryReverse',
+            type: 'boolean',
         },
         {
             name: 'galleryImg',

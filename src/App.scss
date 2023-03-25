@@ -74,7 +74,7 @@ body::-webkit-scrollbar-track-piece
 }
 
 .section__padding {
-  padding: 4rem 6rem;
+  //padding: 4rem 6rem;
   /*padding: 4rem 0;*/
 }
 
@@ -149,8 +149,10 @@ body::-webkit-scrollbar-track-piece
 }
 
 .app__wrapper_img-reverse {
-  justify-content: flex-start;
-  margin-right: 2rem;
+  //justify-content: flex-start;
+  //margin: 2rem;
+  justify-content: center;
+  //margin-right: 0;
 
   @media screen and (max-width: 1150px) {
     justify-content: center;
@@ -333,4 +335,16 @@ body::-webkit-scrollbar-track-piece
 
 .app__gallery-content {
   align-items: center;
+}
+
+.app__header-h1 {
+  text-align: center;
+}
+
+.gallery__direction {
+  flex-direction: row;
+}
+
+.reverse {
+  flex-direction: row-reverse ;
 }

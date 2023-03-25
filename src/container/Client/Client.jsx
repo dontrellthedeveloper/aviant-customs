@@ -18,6 +18,8 @@ const Client = () => {
             galleryDesc,
             galleryCaption,
             bio2,
+            vidReverse,
+            galleryReverse,
             thumbnail{
                 asset->{
                     _id,

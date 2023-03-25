@@ -42,7 +42,7 @@ const Header = () => {
                     <button type="button" className="custom__button">Get a Quote</button>
                 </div>
 
-                <div className="app__wrapper_img custom__mobile-header" style={{flexDirection: 'column', zIndex: '5'}}>
+                <div className="app__wrapper_img custom__mobile-header" style={{flexDirection: 'column', zIndex: '5', display: 'none'}}>
                     <img src={images.jiggs} alt="header_img" />
                 </div>
             </div>

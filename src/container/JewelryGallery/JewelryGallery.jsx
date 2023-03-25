@@ -95,7 +95,7 @@ const Gallery = ({jewel}) => {
         <>
             {jewelry.map((jewel, index) =>
                 (
-        <div className="app__gallery flex__center section__padding"
+        <div className={`app__gallery gallery__direction flex__center section__padding ${jewel.galleryReverse ? 'reverse' : ''} `}
              style={{borderTop: '1px solid rgb(224, 204, 132)'}}
              key={jewel.name + index}
         >
@@ -115,9 +115,9 @@ const Gallery = ({jewel}) => {
                 </div>
             </div>
             <div className="app__gallery-content">
-                <SubHeading title="Priya Piece" />
+                <SubHeading title={jewel.galleryCaption} />
                 <h1 className="headtext__cormorant">{jewel.galleryTitle}</h1>
-                <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>(Here is where you can enter a description.)</p>
+                <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>{jewel.galleryDesc}</p>
                 <button type="button" className="custom__button">View More</button>
             </div>
 
