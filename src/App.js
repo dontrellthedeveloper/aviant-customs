@@ -11,6 +11,11 @@ import Gallery4 from "./container/Gallery4/Gallery4";
 import Vid3 from "./container/Vid3/Vid3";
 import Vid4 from "./container/Vid4/Vid4";
 import Vid5 from "./container/Vid5/Vid5";
+import JewelryClient from "./container/JewelryClient/JewelryClient";
+import JewelryGallery from "./container/JewelryGallery/JewelryGallery";
+import Client from "./container/Client/Client";
+
+
 
 const App = () => {
     const [splashOff, setSplashOff] = useState(true);
@@ -20,7 +25,7 @@ const App = () => {
         const isMobile = resolution >= 320 && resolution <= 480;
 
 
-        console.log(isMobile)
+        // console.log(isMobile)
         const isTablet = resolution >= 768 && resolution <= 1024;
         const isDesktop = !isMobile && !isTablet;
 
@@ -44,6 +49,8 @@ const App = () => {
             <Navbar />
             <Header />
             {/*<Gallery4 />*/}
+            <Client/>
+
             <div style={{position: "relative"}}>
                 <Chef />
             </div>

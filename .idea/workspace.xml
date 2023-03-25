@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7683885f-776d-439f-98e4-af2a39e7da3e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend_sanity/schemas/jewelry.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/Client/Client.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/JewelryClient/JewelryClient.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container/JewelryGallery/JewelryGallery.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Chef/Chef.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Chef/Chef.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Gallery/Gallery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Gallery/Gallery.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Gallery2/Gallery2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Gallery2/Gallery2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Gallery2/Gallery2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Gallery2/Gallery2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Gallery3/Gallery3.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Gallery3/Gallery3.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Vid3/Vid3.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Vid3/Vid3.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Vid4/Vid4.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Vid4/Vid4.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Vid5/Vid5.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Vid5/Vid5.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Gallery4/Gallery4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Gallery4/Gallery4.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,22 +32,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Project.color&quot;: &quot;514d12&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dontrellwashington/Documents/React2/aviantcustoms&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "514d12",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/dontrellwashington/Documents/React2/aviantcustoms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "/Users/dontrellwashington/Documents/React2/aviantcustoms/backend_sanity/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/container" />
@@ -67,7 +71,7 @@
       <workItem from="1678077213574" duration="41559000" />
       <workItem from="1678669817293" duration="39733000" />
       <workItem from="1678778262334" duration="35674000" />
-      <workItem from="1679682808093" duration="18315000" />
+      <workItem from="1679682808093" duration="42146000" />
     </task>
     <servers />
   </component>
