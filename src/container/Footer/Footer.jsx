@@ -53,6 +53,7 @@ const Footer = () => {
             {contact.map((form, index) => (
             <div className="app__footer section__padding" style={{
                 // zIndex: '2',
+
                 position: 'relative'}} id="login" key={form.name + index}>
                 <FooterOverlay />
                 <Newsletter form={form} />

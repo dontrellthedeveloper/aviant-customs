@@ -45,9 +45,20 @@ const App = () => {
             <Navbar />
             <Header />
             <Client/>
+
+
             <div style={{position: "relative", zIndex: '0'}}>
                 <AboutUs />
+
             </div>
+
+
+
+
+            {/*<Intro />*/}
+            {/*<Laurels />*/}
+
+
             <div style={{position: "relative"}}>
                 <Footer />
             </div>

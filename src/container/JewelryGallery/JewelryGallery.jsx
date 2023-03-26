@@ -96,9 +96,16 @@ const Gallery = ({jewel}) => {
             {/*{jewelry.map((jewel, index) =>*/}
             {/*    (*/}
         <div className={`app__gallery gallery__direction flex__center section__padding ${jewel.galleryReverse ? 'reverse' : ''} `}
-             style={{borderTop: '1px solid rgb(224, 204, 132)'}}
+             style={{
+                 // borderTop: '1px solid rgb(224, 204, 132)'
+        }}
         >
             {/*<div style={{display: 'flex', maxWidth: '1200px', margin: '0 auto'}}>*/}
+            <div className="app__gallery-content client__mobile">
+                <h1 className="headtext__cormorant">{jewel.galleryTitle}</h1>
+                <SubHeading title={jewel.galleryCaption} />
+
+            </div>
             <div className="app__gallery-images">
                 <div className="app__gallery-images_container" ref={scrollRef}>
                     {imagesG.map((image, index) => (
@@ -113,7 +120,7 @@ const Gallery = ({jewel}) => {
                     <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll('right')} />
                 </div>
             </div>
-            <div className="app__gallery-content">
+            <div className="app__gallery-content client__desktop">
                 <SubHeading title={jewel.galleryCaption} />
                 <h1 className="headtext__cormorant">{jewel.galleryTitle}</h1>
                 <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>{jewel.galleryDesc}</p>

@@ -46,7 +46,7 @@ const AboutUs = () => {
     return (
         <div>
             {aboutUs.map((about, index) => (
-            <div className="app__aboutus app__bg flex__center section__padding" style={{zIndex: '-2', position: 'relative'}}  id="about" key={about.name + index}>
+            <div className="app__aboutus app__bg flex__center section__padding" style={{zIndex: '-2', position: 'relative', borderTop: '1px solid rgb(224, 204, 132)'}}  id="about" key={about.name + index}>
 
 
                 <div className="app__aboutus-overlay flex__center">

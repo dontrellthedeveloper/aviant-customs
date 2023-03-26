@@ -14,7 +14,7 @@
     flex-direction: column;
 
     min-width: 500px;
-    padding-right: 2rem;
+    /*padding-right: 2rem;*/
 }
 
 .app__gallery-content button {

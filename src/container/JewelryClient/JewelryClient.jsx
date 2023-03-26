@@ -109,6 +109,23 @@ const JewelryClient = ({jewel}) => {
                              maxWidth: '1400px'
                          }}
                     >
+                        <div className="app__wrapper_info client__mobile">
+                            <h1 className="headtext__cormorant">{jewel.name}</h1>
+                            <SubHeading title={jewel.caption}/>
+
+
+                            {/*<div className="app__chef-content">*/}
+
+                            {/*    <p className="p__opensans"> {jewel.description} </p>*/}
+                            {/*</div>*/}
+
+                            {/*<div className="app__chef-sign">*/}
+
+                            {/*    <p className="p__opensans">Designed by</p>*/}
+                            {/*    <p>Moliere Neptune</p>*/}
+                            {/*    <img src={images.sign} alt="sign_image"/>*/}
+                            {/*</div>*/}
+                        </div>
                         <div className="app__wrapper_img app__wrapper_img-reverse relative" style={{zIndex: 10}}>
 
 
@@ -124,7 +141,7 @@ const JewelryClient = ({jewel}) => {
                                     // onMouseOver={videoHoverOn}
                                     // onMouseOut={videoHoverOff}
                                     // autoPlay
-                                    style={{border: '15px solid #e0cc84' }}
+                                    style={{border: '5px solid #e0cc84' }}
                                     className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'}
                                     h-[300px]
                                     md:h-[400px]
@@ -147,7 +164,7 @@ const JewelryClient = ({jewel}) => {
                                     // onMouseOver={videoHoverOn}
                                     // onMouseOut={videoHoverOff}
                                     // autoPlay
-                                    style={{border: '15px solid #e0cc84' }}
+                                    style={{border: '5px solid #e0cc84' }}
                                     className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'}
                                     h-[300px]
                                     md:h-[400px]
@@ -185,7 +202,24 @@ const JewelryClient = ({jewel}) => {
                             )}
 
                         </div>
-                        <div className="app__wrapper_info">
+                        <div className="app__wrapper_info client__mobile">
+                            {/*<SubHeading title={jewel.caption}/>*/}
+                            {/*<h1 className="headtext__cormorant">{jewel.name}</h1>*/}
+
+                            <div className="app__chef-content">
+
+                                <p className="p__opensans"> {jewel.description} </p>
+                            </div>
+
+                            <div className="app__chef-sign">
+
+                                <p className="p__opensans">Designed by</p>
+                                <p style={{marginBottom: '1rem'}}>Moliere Neptune</p>
+                                {/*<img src={images.sign} alt="sign_image"/>*/}
+                            </div>
+                        </div>
+
+                        <div className="app__wrapper_info client__desktop">
                             <SubHeading title={jewel.caption}/>
                             <h1 className="headtext__cormorant">{jewel.name}</h1>
 
