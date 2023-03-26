@@ -61,7 +61,7 @@ const Footer = () => {
                     <p className="p__opensans">2023 Aviant Customs. All Rights reserved.</p>
                 </div>
 
-                {starsOff && <StarsCanvas/>}
+                {/*{starsOff && <StarsCanvas/>}*/}
 
             </div>
 

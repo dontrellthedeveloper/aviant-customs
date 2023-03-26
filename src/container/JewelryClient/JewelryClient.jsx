@@ -120,7 +120,7 @@ const JewelryClient = ({jewel}) => {
                                     onClick={onVideoPress}
                                     // muted
                                     // controls
-                                    // poster={videothumb}
+                                    poster={jewel?.thumbnail?.asset.url}
                                     // onMouseOver={videoHoverOn}
                                     // onMouseOut={videoHoverOff}
                                     // autoPlay
@@ -143,7 +143,7 @@ const JewelryClient = ({jewel}) => {
                                     // onClick={onVideoPress}
                                     muted
                                     controls
-                                    // poster={videothumb}
+                                    poster={jewel?.thumbnail?.asset.url}
                                     // onMouseOver={videoHoverOn}
                                     // onMouseOut={videoHoverOff}
                                     // autoPlay
@@ -205,7 +205,7 @@ const JewelryClient = ({jewel}) => {
                     </div>
 
 
-                    {starsOff && <StarsCanvas2 />}
+                    {/*{starsOff && <StarsCanvas2 />}*/}
 
                 </div>
 

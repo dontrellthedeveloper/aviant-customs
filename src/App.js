@@ -38,52 +38,18 @@ const App = () => {
     }, [])
 
 
-    // useEffect(() => {
-    //     setSplashOff()
-    // })
 
     return (
         <div>
-            {/*{splashOff && <Splash/>}*/}
             <Splash/>
             <Navbar />
             <Header />
-            {/*<Gallery4 />*/}
             <Client/>
-
-            <div style={{position: "relative"}}>
-                <Chef />
-            </div>
-            <Gallery2 />
-            <div style={{position: "relative"}}>
-                <Vid5 />
-            </div>
-            <Gallery3 />
-            <div style={{position: "relative"}}>
-                <Vid3 />
-            </div>
-            <Gallery />
-            <div style={{position: "relative"}}>
-                <Vid4 />
-            </div>
-            {/*<SpecialMenu />*/}
             <div style={{position: "relative", zIndex: '0'}}>
                 <AboutUs />
-
             </div>
-
-
-
-
-            {/*<Intro />*/}
-            {/*<Laurels />*/}
-
-
-            <div style={{position: "relative",
-                // zIndex: '0'
-            }}>
+            <div style={{position: "relative"}}>
                 <Footer />
-                {/*<StarsCanvas/>*/}
             </div>
         </div>
     );
