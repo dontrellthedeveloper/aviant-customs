@@ -5,6 +5,7 @@ import Div100vh from 'react-div-100vh'
 import { use100vh } from 'react-div-100vh'
 import ScrollToTop from "../../utils/ScrollToTop";
 import {motion, AnimatePresence} from "framer-motion";
+import {client} from "../../client";
 
 
 
@@ -25,6 +26,33 @@ const Splash = () => {
     const [showElement, setShowElement] = useState(true);
     const [showScrollbar, setShowScrollbar] = useState(false)
     const [visible, setVisible] = useState(true);
+
+
+    const [splash, setSplash] = useState([]);
+
+
+    useEffect(() => {
+        client.fetch(`*[_type == "splash"] | order(orderRank) {
+            title,
+            _id,
+            thumbnail{
+                asset->{
+                    _id,
+                    url
+                }
+            },
+            video{
+                asset->{
+                    _id,
+                    url
+                }
+            },
+
+        }`).then((data) => setSplash(data))
+            .catch(console.error)
+    }, []);
+
+    console.log(splash)
 
     const removeElement = () => {
         setVisible((prev) => !prev);
@@ -54,42 +82,52 @@ const Splash = () => {
 
     return (
 
-        <div id='splash'>
+        <>
+            {splash.map((drip, index) => (
+
+                <div id='splash' key={drip.name + index} >
 
 
 
-        {showElement ? (
-            <AnimatePresence>
+                    {showElement ? (
+                        <AnimatePresence>
 
-                    <div
-                        className={`${fadeElement ? "" : "fade-out-2 fade-2"} ${visible ? "" : "fade-out-2 fade-2"}  ${showScrollbar ? "scroll-bar__styles" : ""} `}
+                            <div
+                                className={`${fadeElement ? "" : "fade-out-2 fade-2"} ${visible ? "" : "fade-out-2 fade-2"}  ${showScrollbar ? "scroll-bar__styles" : ""} `}
 
-                    >
+                            >
 
 
-                    <Div100vh className="preloader">
-                        <Div100vh className='video-bg'>
-                            <div className="video-overlay"></div>
-                            <AutoPlaySilentVideo/>
-                            <Div100vh className="video-text">
+                                <Div100vh className="preloader">
+                                    <Div100vh className='video-bg'>
+                                        <div className="video-overlay"></div>
+                                        <AutoPlaySilentVideo
+                                            drip={drip}
+                                        />
+                                        <Div100vh className="video-text">
 
-                                <h2 className='video-head-text'>
-                                    {/*<button>Click To Enter</button>*/}
-                                    <button onClick={removeElement} type="button" className="custom__button splash__button" style={{}}>Click To Enter</button>
-                                </h2>
-                            </Div100vh>
-                        </Div100vh>
-                    </Div100vh>
-                    </div>
+                                            <h2 className='video-head-text'>
+                                                {/*<button>Click To Enter</button>*/}
+                                                <button onClick={removeElement} type="button" className="custom__button splash__button" style={{}}>{drip.title}</button>
+                                            </h2>
+                                        </Div100vh>
+                                    </Div100vh>
+                                </Div100vh>
+                            </div>
 
-            </AnimatePresence>
-            ) : (
-                // <ScrollToTop/>
-            <div></div>
-            )}
+                        </AnimatePresence>
+                    ) : (
+                        // <ScrollToTop/>
+                        <div></div>
+                    )}
 
-        </div>
+                </div>
+            ))}
+        </>
     );
+
+
+
 };
 
 export default Splash;

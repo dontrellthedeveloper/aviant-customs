@@ -68,6 +68,7 @@
 
 .footer__copyright {
     margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 2000px) {

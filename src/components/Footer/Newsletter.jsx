@@ -3,13 +3,12 @@ import React from 'react';
 import SubHeading from '../SubHeading/SubHeading';
 import './Newsletter.scss';
 
-const Newsletter = () => (
+const Newsletter = ({form}) => (
     <div className="app__newsletter" style={{zIndex: 60}}>
         <div className="app__newsletter-heading">
-            <SubHeading title="Contact Form" />
-            <h1 className="headtext__cormorant">Contact Us</h1>
-            <p className="p__opensans">For more information, please fill out our contact
-                form.</p>
+            <SubHeading title={form.caption} />
+            <h1 className="headtext__cormorant">{form.title}</h1>
+            <p className="p__opensans">{form.description}</p>
         </div>
         <div className="app__newsletter-input flex__center">
             <input type="text" placeholder="Name" />

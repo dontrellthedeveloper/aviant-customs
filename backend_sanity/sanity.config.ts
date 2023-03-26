@@ -8,6 +8,8 @@ import {images} from '../src/constants';
 import {DropIcon} from '@sanity/icons'
 import {PlugIcon} from '@sanity/icons'
 import {HomeIcon} from '@sanity/icons'
+import {UserIcon} from '@sanity/icons'
+import {EditIcon} from '@sanity/icons'
 
 const devOnlyPlugins = [getStartedPlugin()]
 
@@ -26,23 +28,44 @@ export default defineConfig({
           .items([
               // ({type: 'about', S, context}),
             // Minimum required configuration
+              orderableDocumentListDeskItem({
+                  type: 'jewelry',
+                  S,
+                  context,
+                  title: 'Jewelry Clients',
+                  icon: PlugIcon
+              }),
             orderableDocumentListDeskItem({
-                type: 'header',
+                type: 'splash',
                 S,
                 context,
-                title: 'Header',
-                icon: HomeIcon
+                title: 'Splash Page',
+                icon: DropIcon
             }),
+              orderableDocumentListDeskItem({
+                  type: 'header',
+                  S,
+                  context,
+                  title: 'Header',
+                  icon: HomeIcon
+              }),
+
+
             orderableDocumentListDeskItem({
-                type: 'jewelry',
+                type: 'about',
                 S,
                 context,
-                title: 'Jewelry Clients',
-                icon: PlugIcon
+                title: 'About Page',
+                icon: UserIcon
             }),
 
-            orderableDocumentListDeskItem({type: 'about', S, context}),
-
+              orderableDocumentListDeskItem({
+                  type: 'contact',
+                  S,
+                  context,
+                  title: 'Contact',
+                  icon: EditIcon
+              }),
 
           ])
     },
