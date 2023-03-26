@@ -42,7 +42,7 @@ export default {
             },
         },
         {
-            title: 'Check this Box if the video is Portrait (iPhone) Size.',
+            title: 'Check this Box if the video is iPhone (Portrait) Size.',
             name: 'vidPortrait',
             type: 'boolean',
         },

@@ -88,8 +88,8 @@ const Gallery = ({jewel}) => {
 
 
 
-    // const imagesG = [images.p1, images.p2, images.p3, images.p4];
-    const imagesG = [jewel?.galleryImg.asset.url, jewel?.galleryImg2.asset.url, jewel?.galleryImg3.asset.url, jewel?.galleryImg4.asset.url];
+
+    const imagesG = [jewel?.galleryImg?.asset.url, jewel?.galleryImg2?.asset.url, jewel?.galleryImg3?.asset.url, jewel?.galleryImg4?.asset.url];
 
     return (
         <>
