@@ -345,6 +345,8 @@ body::-webkit-scrollbar-track-piece
   flex-direction: row;
 }
 
-.reverse {
-  flex-direction: row-reverse ;
+@media screen and (min-width: 1151px) {
+  .reverse {
+    flex-direction: row-reverse;
+  }
 }

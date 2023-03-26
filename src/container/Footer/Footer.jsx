@@ -89,7 +89,7 @@ const Footer = () => {
                     <p className="p__opensans">{form.copyright}</p>
                 </div>
 
-                {/*{starsOff && <StarsCanvas/>}*/}
+                {starsOff && <StarsCanvas/>}
 
             </div>
             ))}

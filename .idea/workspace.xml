@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7683885f-776d-439f-98e4-af2a39e7da3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend_sanity/schemas/jewelry.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend_sanity/schemas/jewelry.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/JewelryGallery/JewelryGallery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/JewelryGallery/JewelryGallery.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_sanity/sanity.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend_sanity/sanity.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/JewelryClient/JewelryClient.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/JewelryClient/JewelryClient.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +66,7 @@
       <workItem from="1678077213574" duration="41559000" />
       <workItem from="1678669817293" duration="39733000" />
       <workItem from="1678778262334" duration="35674000" />
-      <workItem from="1679682808093" duration="69185000" />
+      <workItem from="1679682808093" duration="72004000" />
     </task>
     <servers />
   </component>

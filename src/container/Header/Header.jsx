@@ -95,7 +95,7 @@ const Header = () => {
 
 
 
-            {/*{starsOff && <StarsCanvas/>}*/}
+            {starsOff && <StarsCanvas/>}
 
         </div>
 

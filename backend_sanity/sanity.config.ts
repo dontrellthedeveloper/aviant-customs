@@ -19,6 +19,7 @@ export default defineConfig({
 
   projectId: 'on7llfig',
   dataset: 'production',
+    basePath: '/admin',
 
   plugins: [deskTool({
     structure: (S, context) => {

@@ -72,7 +72,7 @@ const AboutUs = () => {
                         <button type="button" className="custom__button">Know More</button>
                     </div>
                 </div>
-                {/*{starsOff && <StarsCanvas/>}*/}
+                {starsOff && <StarsCanvas/>}
             </div>
             ))}
         </div>

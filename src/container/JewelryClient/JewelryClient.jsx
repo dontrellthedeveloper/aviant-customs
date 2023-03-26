@@ -205,7 +205,7 @@ const JewelryClient = ({jewel}) => {
                     </div>
 
 
-                    {/*{starsOff && <StarsCanvas2 />}*/}
+                    {starsOff && <StarsCanvas2 />}
 
                 </div>
 
