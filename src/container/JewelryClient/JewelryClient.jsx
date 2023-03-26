@@ -95,91 +95,48 @@ const JewelryClient = ({jewel}) => {
     // }, [isVideoMuted]);
 
     return (
-        <>
-            <div style={{position: "relative"}}>
-                <div
-                    style={{borderTop: '1px solid rgb(224, 204, 132)'}}
-                    className='app__bg '
-                    id="full"
-                >
-                    <div className={`app__wrapper section__padding ${jewel.vidReverse ? 'reverse' : ''} `}
-                         style={{
-                             position: 'relative',
+        <div>
+            {jewel.video && (
+                <div style={{position: "relative"}}>
+                    <div className='app__bg '>
+                        <div className={`app__wrapper2 section__padding ${jewel.vidReverse ? 'reverse' : ''} `} style={{ position: 'relative', maxWidth: '1400px'}}>
+                            <div className="app__wrapper_info client__mobile">
+                                {jewel.name && (
+                                    <h1 className="headtext__cormorant">{jewel.name}</h1>
+                                )}
 
-                             maxWidth: '1400px'
-                         }}
-                    >
-                        <div className="app__wrapper_info client__mobile">
-                            <h1 className="headtext__cormorant">{jewel.name}</h1>
-                            <SubHeading title={jewel.caption}/>
+                                {jewel.caption && (
+                                    <SubHeading title={jewel.caption}/>
+                                )}
+                            </div>
+                            <div className="app__wrapper_img app__wrapper_img-reverse relative" style={{zIndex: 10}}>
 
-
-                            {/*<div className="app__chef-content">*/}
-
-                            {/*    <p className="p__opensans"> {jewel.description} </p>*/}
-                            {/*</div>*/}
-
-                            {/*<div className="app__chef-sign">*/}
-
-                            {/*    <p className="p__opensans">Designed by</p>*/}
-                            {/*    <p>Moliere Neptune</p>*/}
-                            {/*    <img src={images.sign} alt="sign_image"/>*/}
-                            {/*</div>*/}
-                        </div>
-                        <div className="app__wrapper_img app__wrapper_img-reverse relative" style={{zIndex: 10}}>
-
-
-                            {videoMobile &&
-                                <video
+                                {videoMobile &&
+                                    <video
                                     loop
                                     src={jewel?.video?.asset.url}
                                     ref={videoRef2}
                                     onClick={onVideoPress}
-                                    // muted
-                                    // controls
-                                    poster={jewel?.thumbnail?.asset.url}
-                                    // onMouseOver={videoHoverOn}
-                                    // onMouseOut={videoHoverOff}
-                                    // autoPlay
+                                    poster={jewel?.thumbnail?.asset.url ? jewel?.thumbnail?.asset.url : ''}
                                     style={{border: '5px solid #e0cc84' }}
-                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'}
-                                    h-[300px]
-                                    md:h-[400px]
-                                    lg:h-[528px]
-                                    {/*w-[200px] */}
-                                    w-full
-                                    rounded-2xl cursor-pointer bg-gray-100`}
-                                ></video>
-                            }
+                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'}`}>
+                                    </video>
+                                }
 
-                            {!videoMobile &&
-                                <video
+                                {!videoMobile &&
+                                    <video
                                     loop
                                     src={jewel?.video?.asset.url}
                                     ref={videoRef2}
-                                    // onClick={onVideoPress}
-                                    muted
                                     controls
-                                    poster={jewel?.thumbnail?.asset.url}
-                                    // onMouseOver={videoHoverOn}
-                                    // onMouseOut={videoHoverOff}
-                                    // autoPlay
+                                    poster={jewel?.thumbnail?.asset.url ? jewel?.thumbnail?.asset.url : ''}
                                     style={{border: '5px solid #e0cc84' }}
-                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'}
-                                    h-[300px]
-                                    md:h-[400px]
-                                    lg:h-[528px]
-                                    {/*w-[200px] */}
-                                    w-full
-                                    rounded-2xl cursor-pointer bg-gray-100`}
-                                ></video>
-                            }
+                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'} `}>
+                                    </video>
+                                }
 
-                            {videoMobile && (
-                                <div className="
-
-                                video__play-styles"
-                                >
+                                {videoMobile && (
+                                    <div className="video__play-styles">
                                     {playing ? (
                                         <button style={{display: 'none'}} className='video__text-styles' onClick={onVideoPress}>
                                             <BsFillPauseFill className='' />
@@ -198,55 +155,45 @@ const JewelryClient = ({jewel}) => {
                                             <HiVolumeUp className='' />
                                         </button>
                                     )}
+                                    </div>
+                                )}
+                            </div>
+                            {jewel.description && (
+                                <div className="app__wrapper_info client__mobile">
+                                    <div className="app__chef-content">
+                                        <p className="p__opensans"> {jewel.description} </p>
+                                    </div>
                                 </div>
                             )}
 
-                        </div>
-                        <div className="app__wrapper_info client__mobile">
-                            {/*<SubHeading title={jewel.caption}/>*/}
-                            {/*<h1 className="headtext__cormorant">{jewel.name}</h1>*/}
+                            <div className="app__wrapper_info client__desktop">
+                                {jewel.caption && (
+                                    <SubHeading title={jewel.caption}/>
+                                )}
+                                {jewel.name && (
+                                    <h1 className="headtext__cormorant">{jewel.name}</h1>
+                                )}
 
-                            <div className="app__chef-content">
+                                {jewel.description && (
+                                    <div className="app__chef-content">
+                                        <p className="p__opensans"> {jewel.description} </p>
+                                    </div>
+                                )}
 
-                                <p className="p__opensans"> {jewel.description} </p>
-                            </div>
-
-                            <div className="app__chef-sign">
-
-                                <p className="p__opensans">Designed by</p>
-                                <p style={{marginBottom: '1rem'}}>Moliere Neptune</p>
-                                {/*<img src={images.sign} alt="sign_image"/>*/}
-                            </div>
-                        </div>
-
-                        <div className="app__wrapper_info client__desktop">
-                            <SubHeading title={jewel.caption}/>
-                            <h1 className="headtext__cormorant">{jewel.name}</h1>
-
-                            <div className="app__chef-content">
-
-                                <p className="p__opensans"> {jewel.description} </p>
-                            </div>
-
-                            <div className="app__chef-sign">
-
-                                <p className="p__opensans">Designed by</p>
-                                <p>Moliere Neptune</p>
-                                <img src={images.sign} alt="sign_image"/>
+                                <div className="app__chef-sign">
+                                    <p className="p__opensans">Designed by</p>
+                                    <p>Moliere Neptune</p>
+                                    <img src={images.sign} alt="sign_image"/>
+                                </div>
                             </div>
                         </div>
-
+                    {/*{starsOff && <StarsCanvas2 />}*/}
                     </div>
-
-
-                    {starsOff && <StarsCanvas2 />}
-
                 </div>
+            )}
 
-
-            </div>
             <JewelryGallery jewel={jewel} />
-        </>
+        </div>
     );
 }
 

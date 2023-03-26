@@ -81,47 +81,49 @@ const Splash = () => {
     }, []);
 
     return (
-
         <>
             {splash.map((drip, index) => (
 
-                <div id='splash' key={drip.name + index} >
+                <div key={drip.name + index}>
+
+                    {drip.video && (
+                        <div id='splash' >
+                            {showElement ? (
+                                <AnimatePresence>
+
+                                    <div
+                                        className={`${fadeElement ? "" : "fade-out-2 fade-2"} ${visible ? "" : "fade-out-2 fade-2"}  ${showScrollbar ? "scroll-bar__styles" : ""} `}
+
+                                    >
 
 
+                                        <Div100vh className="preloader">
+                                            <Div100vh className='video-bg'>
+                                                <div className="video-overlay"></div>
+                                                <AutoPlaySilentVideo
+                                                    drip={drip}
+                                                />
+                                                <Div100vh className="video-text">
 
-                    {showElement ? (
-                        <AnimatePresence>
-
-                            <div
-                                className={`${fadeElement ? "" : "fade-out-2 fade-2"} ${visible ? "" : "fade-out-2 fade-2"}  ${showScrollbar ? "scroll-bar__styles" : ""} `}
-
-                            >
-
-
-                                <Div100vh className="preloader">
-                                    <Div100vh className='video-bg'>
-                                        <div className="video-overlay"></div>
-                                        <AutoPlaySilentVideo
-                                            drip={drip}
-                                        />
-                                        <Div100vh className="video-text">
-
-                                            <h2 className='video-head-text'>
-                                                {/*<button>Click To Enter</button>*/}
-                                                <button onClick={removeElement} type="button" className="custom__button splash__button" style={{}}>{drip.title}</button>
-                                            </h2>
+                                                    <h2 className='video-head-text'>
+                                                        {/*<button>Click To Enter</button>*/}
+                                                        <button onClick={removeElement} type="button" className="custom__button splash__button" style={{}}>{drip.title ? drip.title : 'Click To Enter'}</button>
+                                                    </h2>
+                                                </Div100vh>
+                                            </Div100vh>
                                         </Div100vh>
-                                    </Div100vh>
-                                </Div100vh>
-                            </div>
+                                    </div>
 
-                        </AnimatePresence>
-                    ) : (
-                        // <ScrollToTop/>
-                        <div></div>
+                                </AnimatePresence>
+                            ) : (
+                                // <ScrollToTop/>
+                                <div></div>
+                            )}
+
+                        </div>
                     )}
-
                 </div>
+
             ))}
         </>
     );

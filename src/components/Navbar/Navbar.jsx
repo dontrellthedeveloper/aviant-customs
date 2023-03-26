@@ -25,10 +25,7 @@ const Navbar = () => {
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="#home">Home</a></li>
-        <li className="p__opensans"><a href="#full">Full Set</a></li>
-        <li className="p__opensans"><a href="#pendants">Pendants</a></li>
-        <li className="p__opensans"><a href="#chains">Chains</a></li>
-        <li className="p__opensans"><a href="#rings">Rings</a></li>
+        <li className="p__opensans"><a href="#full">Custom Jewelry</a></li>
         <li className="p__opensans"><a href="#about">About</a></li>
         <li className="p__opensans"><a href="#contact">Contact</a></li>
       </ul>
@@ -38,16 +35,13 @@ const Navbar = () => {
       {/*  <a href="/" className="p__opensans">Book Table</a>*/}
       {/*</div>*/}
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu color="#dcca87" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <AiOutlineClose fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
               <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li><a href="#full" onClick={() => setToggleMenu(false)}>Full</a></li>
-              <li><a href="#pendants" onClick={() => setToggleMenu(false)}>Pendants</a></li>
-              <li><a href="#chains" onClick={() => setToggleMenu(false)}>Chains</a></li>
-              <li><a href="#rings" onClick={() => setToggleMenu(false)}>Rings</a></li>
+              <li><a href="#full" onClick={() => setToggleMenu(false)}>Custom Jewelry</a></li>
               <li><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>
               <li><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
             </ul>

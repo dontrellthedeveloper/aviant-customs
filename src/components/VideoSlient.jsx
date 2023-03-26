@@ -15,7 +15,7 @@ export default function AutoPlaySilentVideo({drip}) {
                     // src={drip?.video?.asset.url}
                     muted
                     playsInline>
-                    <source src={drip?.video?.asset.url} type="video/mp4"/>
+                    <source src={drip?.video?.asset.url ? drip?.video?.asset.url : videoBg} type="video/mp4"/>
                 </video>
     );
 }

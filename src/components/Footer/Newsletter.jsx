@@ -6,9 +6,15 @@ import './Newsletter.scss';
 const Newsletter = ({form}) => (
     <div className="app__newsletter" style={{zIndex: 60}}>
         <div className="app__newsletter-heading">
-            <SubHeading title={form.caption} />
-            <h1 className="headtext__cormorant">{form.title}</h1>
-            <p className="p__opensans">{form.description}</p>
+            {form.caption && (
+                <SubHeading title={form.caption} />
+            )}
+            {form.title && (
+                <h1 className="headtext__cormorant">{form.title}</h1>
+            )}
+            {form.description && (
+                <p className="p__opensans">{form.description}</p>
+            )}
         </div>
         <div className="app__newsletter-input flex__center">
             <input type="text" placeholder="Name" />

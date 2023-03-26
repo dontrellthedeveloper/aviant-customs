@@ -92,60 +92,58 @@ const Gallery = ({jewel}) => {
     const imagesG = [jewel?.galleryImg?.asset.url, jewel?.galleryImg2?.asset.url, jewel?.galleryImg3?.asset.url, jewel?.galleryImg4?.asset.url];
 
     return (
-        <>
-            {/*{jewelry.map((jewel, index) =>*/}
-            {/*    (*/}
-        <div className={`app__gallery gallery__direction flex__center section__padding ${jewel.galleryReverse ? 'reverse' : ''} `}
-             style={{
-                 // borderTop: '1px solid rgb(224, 204, 132)'
-        }}
-        >
-            {/*<div style={{display: 'flex', maxWidth: '1200px', margin: '0 auto'}}>*/}
-            <div className="app__gallery-content client__mobile">
-                <h1 className="headtext__cormorant">{jewel.galleryTitle}</h1>
-                <SubHeading title={jewel.galleryCaption} />
-
-            </div>
-            <div className="app__gallery-images">
-                <div className="app__gallery-images_container" ref={scrollRef}>
-                    {imagesG.map((image, index) => (
-                        <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
-                            <img src={image} onClick={() => showImage(image)}   alt="gallery_image" />
-                            <MdOutlinePhotoCamera onClick={() => showImage(image)} className="gallery__image-icon" />
+        <div>
+            {imagesG && (
+                <div className={`app__gallery gallery__direction flex__center section__padding ${jewel.galleryReverse ? 'reverse' : ''} `}
+                     style={{borderBottom: '1px solid rgb(224, 204, 132)'}}>
+                    <div className="app__gallery-content client__mobile">
+                        {jewel.galleryTitle && (
+                            <h1 className="headtext__cormorant">{jewel.galleryTitle}</h1>
+                        )}
+                        {jewel.galleryCaption && (
+                            <SubHeading title={jewel.galleryCaption} />
+                        )}
+                    </div>
+                    <div className="app__gallery-images">
+                        <div className="app__gallery-images_container" ref={scrollRef}>
+                            {imagesG.map((image, index) => (
+                                <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
+                                    <img src={image} onClick={() => showImage(image)}   alt="gallery_image" />
+                                    <MdOutlinePhotoCamera onClick={() => showImage(image)} className="gallery__image-icon" />
+                                </div>
+                            ))}
                         </div>
-                    ))}
+                        <div className="app__gallery-images_arrows">
+                            <BsArrowLeftShort className="gallery__arrow-icon" onClick={() => scroll('left')} />
+                            <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll('right')} />
+                        </div>
+                    </div>
+                    <div className="app__gallery-content client__desktop">
+                        {jewel.galleryCaption && (
+                            <SubHeading title={jewel.galleryCaption} />
+                        )}
+                        {jewel.galleryTitle && (
+                            <h1 className="headtext__cormorant">{jewel.galleryTitle}</h1>
+                        )}
+                        {jewel.galleryDesc && (
+                            <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>{jewel.galleryDesc}</p>
+                        )}
+                        <button type="button" className="custom__button">View More</button>
+                    </div>
+
+
+                    { lightboxDisplay ?
+                        <div id="lightbox" onClick={hideLightBox}>
+                            <button className='lightbox-button' onClick={showPrev}>⭠</button>
+                            <img id="lightbox-img" src={imageToShow}></img>
+                            <button className='lightbox-button' onClick={showNext}>⭢</button>
+                        </div>
+                        : ''
+                    }
+
                 </div>
-                <div className="app__gallery-images_arrows">
-                    <BsArrowLeftShort className="gallery__arrow-icon" onClick={() => scroll('left')} />
-                    <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll('right')} />
-                </div>
-            </div>
-            <div className="app__gallery-content client__desktop">
-                <SubHeading title={jewel.galleryCaption} />
-                <h1 className="headtext__cormorant">{jewel.galleryTitle}</h1>
-                <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>{jewel.galleryDesc}</p>
-                <button type="button" className="custom__button">View More</button>
-            </div>
-
-
-            { lightboxDisplay ?
-                <div id="lightbox" onClick={hideLightBox}>
-
-
-                    <button className='lightbox-button' onClick={showPrev}>⭠</button>
-
-                    <img id="lightbox-img" src={imageToShow}></img>
-
-
-                    <button className='lightbox-button' onClick={showNext}>⭢</button>
-                </div>
-                : '' }
-
-
-            {/*</div>*/}
+            )}
         </div>
-            {/*))}*/}
-        </>
     );
 };
 

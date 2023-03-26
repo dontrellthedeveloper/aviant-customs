@@ -53,7 +53,7 @@ const Header = () => {
 
 
     return (
-        <div className='app__header' style={{height: '100vh'}}>
+        <div className='app__header' style={{height: '100vh',  borderBottom: '1px solid rgb(224, 204, 132)'}}>
 
             {header.map((head, index) => (
                 <div className=" app__wrapper section__padding"
@@ -64,7 +64,7 @@ const Header = () => {
 
 
                     <video className="home-bg-video"
-                           src={head?.video?.asset.url}
+                           src={head?.video?.asset.url ? head?.video?.asset.url : videoBG}
                            poster={head?.thumbnail?.asset.url}
                            autoPlay
                            loop
@@ -79,23 +79,26 @@ const Header = () => {
 
 
                     <div className="app__wrapper_info" style={{zIndex: '5'}}>
-                        <SubHeading title={head.caption} />
+                        {head.caption && (
+                            <SubHeading title={head.caption} />
+                        )}
+                        {head.title && (
                         <h1 className="app__header-h1">{head.title}</h1>
+                        )}
+                        {head.description && (
                         <p className="p__opensans" style={{ margin: '2rem 0' }}>{head.description} </p>
+                        )}
                         <button type="button" className="custom__button">Get a Quote</button>
                     </div>
 
-                    <div className="app__wrapper_img custom__mobile-header" style={{flexDirection: 'column', zIndex: '5', display: 'none'}}>
-                        <img src={images.jiggs} alt="header_img" />
-                    </div>
+                    {/*<div className="app__wrapper_img custom__mobile-header" style={{flexDirection: 'column', zIndex: '5', display: 'none'}}>*/}
+                    {/*    <img src={images.jiggs} alt="header_img" />*/}
+                    {/*</div>*/}
                 </div>
 
             ))}
 
-
-
-
-            {starsOff && <StarsCanvas/>}
+            {/*{starsOff && <StarsCanvas/>}*/}
 
         </div>
 

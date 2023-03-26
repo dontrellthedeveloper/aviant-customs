@@ -46,18 +46,22 @@ const AboutUs = () => {
     return (
         <div>
             {aboutUs.map((about, index) => (
-            <div className="app__aboutus app__bg flex__center section__padding" style={{zIndex: '-2', position: 'relative', borderTop: '1px solid rgb(224, 204, 132)'}}  id="about" key={about.name + index}>
+            <div className="app__aboutus app__bg flex__center section__padding scroll__margin" style={{zIndex: '-2', position: 'relative', borderTop: '1px solid rgb(224, 204, 132)'}}   id="about" key={about.name + index}>
 
-
-                <div className="app__aboutus-overlay flex__center">
-                    <img src={about?.image?.asset.url} alt="G_overlay" />
-                </div>
-
+                {about.image && (
+                    <div className="app__aboutus-overlay flex__center">
+                        <img src={about?.image?.asset.url} alt="G_overlay" />
+                    </div>
+                )}
                 <div className="app__aboutus-content flex__center">
                     <div className="app__aboutus-content_about">
-                        <h1 className="headtext__cormorant">{about.title}</h1>
+                        {about.title && (
+                            <h1 className="headtext__cormorant">{about.title}</h1>
+                        )}
                         <img src={images.crown} alt="about_spoon" className="spoon__img" />
-                        <p className="p__opensans">{about.description1}</p>
+                        {about.description1 && (
+                            <p className="p__opensans">{about.description1}</p>
+                        )}
                         <button type="button" className="custom__button">Know More</button>
                     </div>
 
@@ -66,13 +70,17 @@ const AboutUs = () => {
                     </div>
 
                     <div className="app__aboutus-content_history">
-                        <h1 className="headtext__cormorant">{about.title2}</h1>
+                        {about.title2 && (
+                            <h1 className="headtext__cormorant">{about.title2}</h1>
+                        )}
                         <img src={images.crown} alt="about_spoon" className="spoon__img" />
-                        <p className="p__opensans">{about.description2}</p>
+                        {about.description2 && (
+                            <p className="p__opensans">{about.description2}</p>
+                        )}
                         <button type="button" className="custom__button">Know More</button>
                     </div>
                 </div>
-                {starsOff && <StarsCanvas/>}
+                {/*{starsOff && <StarsCanvas/>}*/}
             </div>
             ))}
         </div>

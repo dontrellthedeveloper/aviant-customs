@@ -66,11 +66,11 @@ const Client = () => {
     console.log(jewelry);
 
     return (
-        <>
+        <div  id="full" className='scroll__margin'>
            {jewelry.map((jewel, index) => (
              <JewelryClient jewel={jewel} key={jewel.name + index} />
            ))}
-        </>
+        </div>
     );
 };
 
