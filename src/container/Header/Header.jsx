@@ -53,7 +53,7 @@ const Header = () => {
 
 
     return (
-        <div className='app__header' style={{height: '100vh',  borderBottom: '1px solid rgb(224, 204, 132)'}}>
+        <div className='app__header' style={{height: '100vh'}}>
 
             {header.map((head, index) => (
                 <div className=" app__wrapper section__padding"

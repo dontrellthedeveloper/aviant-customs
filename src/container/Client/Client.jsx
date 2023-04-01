@@ -34,6 +34,18 @@ const Client = () => {
                     url
                 }
             },
+            videoSquare{
+                asset->{
+                    _id,
+                    url
+                }
+            },
+            thumbnailMobile{
+                asset->{
+                    _id,
+                    url
+                }
+            },
             galleryImg{
                 asset->{
                     _id,

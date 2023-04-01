@@ -46,6 +46,7 @@ export default {
             name: 'vidPortrait',
             type: 'boolean',
         },
+
         {
             name: 'thumbnail',
             title: 'Thumbnail',
@@ -54,8 +55,22 @@ export default {
                 hotspot: true,
             },
         },
-
-
+        {
+            name: 'videoSquare',
+            title: 'Mobile Square Video',
+            type: 'file',
+            options: {
+                hotspot: true,
+            },
+        },
+        {
+            name: 'thumbnailMobile',
+            title: 'Mobile Square Thumbnail',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
         {
             name: 'galleryTitle',
             type: 'string',

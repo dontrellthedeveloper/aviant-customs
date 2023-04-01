@@ -16,6 +16,8 @@ const JewelryClient = ({jewel}) => {
     const [isVideoMuted, setIsVideoMuted] = useState(false);
     const [videoMobile, setVideoMobile] = useState(false)
 
+    const [videoSquare, setVideoSquare] = useState(false)
+
 
     const [starsOff, setStarsOff] = useState(true);
 
@@ -95,7 +97,7 @@ const JewelryClient = ({jewel}) => {
     // }, [isVideoMuted]);
 
     return (
-        <div>
+        <div style={{borderTop: '1px solid rgb(224, 204, 132)'}}>
             {jewel.video && (
                 <div style={{position: "relative"}}>
                     <div className='app__bg '>
@@ -114,12 +116,12 @@ const JewelryClient = ({jewel}) => {
                                 {videoMobile &&
                                     <video
                                     loop
-                                    src={jewel?.video?.asset.url}
+                                    src={jewel?.videoSquare?.asset.url ? jewel?.videoSquare?.asset.url : jewel?.video?.asset.url}
                                     ref={videoRef2}
                                     onClick={onVideoPress}
-                                    poster={jewel?.thumbnail?.asset.url ? jewel?.thumbnail?.asset.url : ''}
+                                    poster={jewel?.thumbnailMobile?.asset.url ? jewel?.thumbnailMobile?.asset.url : jewel?.thumbnail?.asset.url}
                                     style={{border: '5px solid #e0cc84' }}
-                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'}`}>
+                                    className={`${jewel.videoSquare ? 'video__observer-styles' : 'video__styles '}`}>
                                     </video>
                                 }
 

@@ -104,6 +104,8 @@ const Gallery = ({jewel}) => {
                             <SubHeading title={jewel.galleryCaption} />
                         )}
                     </div>
+
+
                     <div className="app__gallery-images">
                         <div className="app__gallery-images_container" ref={scrollRef}>
                             {imagesG.map((image, index) => (
@@ -118,6 +120,8 @@ const Gallery = ({jewel}) => {
                             <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll('right')} />
                         </div>
                     </div>
+
+
                     <div className="app__gallery-content client__desktop">
                         {jewel.galleryCaption && (
                             <SubHeading title={jewel.galleryCaption} />
