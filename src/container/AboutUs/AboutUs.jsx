@@ -5,6 +5,9 @@ import './AboutUs.scss';
 import StarsCanvas from "../../components/canvas/Stars2";
 import {SubHeading} from "../../components";
 import {client} from "../../client";
+import DiamondCanvas from "../../components/canvas/Diamond";
+import DiamondCanvas2 from "../../components/canvas/Diamond2";
+import Diamond3 from "../../components/canvas/Diamond3";
 
 const AboutUs = () => {
     const [starsOff, setStarsOff] = useState(true);
@@ -46,13 +49,19 @@ const AboutUs = () => {
     return (
         <div>
             {aboutUs.map((about, index) => (
-            <div className="app__aboutus app__bg flex__center section__padding scroll__margin" style={{zIndex: '-2', position: 'relative', borderTop: '1px solid rgb(224, 204, 132)'}}   id="about" key={about.name + index}>
+            <div className="app__aboutus app__bg flex__center section__padding scroll__margin" style={{ position: 'relative', borderTop: '1px solid rgb(224, 204, 132)'}}   id="about" key={about.name + index}>
 
                 {about.image && (
                     <div className="app__aboutus-overlay flex__center">
                         <img src={about?.image?.asset.url} alt="G_overlay" />
+                        {/*<DiamondCanvas/>*/}
+                        {/*<Diamond3/>*/}
                     </div>
                 )}
+
+
+
+                {/*<DiamondCanvas/>*/}
                 <div className="app__aboutus-content flex__center">
                     <div className="app__aboutus-content_about">
                         {about.title && (
@@ -62,11 +71,16 @@ const AboutUs = () => {
                         {about.description1 && (
                             <p className="p__opensans">{about.description1}</p>
                         )}
-                        <button type="button" className="custom__button">Know More</button>
+                        <a href="#contact">
+                            <button type="button" className="custom__button">Know More</button>
+                        </a>
                     </div>
 
                     <div className="app__aboutus-content_knife flex__center">
                         {/*<img src={images.knife} alt="about_knife" />*/}
+                        {/*<div style={{width: '400px', height: '400px'}}>*/}
+
+                        {/*</div>*/}
                     </div>
 
                     <div className="app__aboutus-content_history">
@@ -77,12 +91,20 @@ const AboutUs = () => {
                         {about.description2 && (
                             <p className="p__opensans">{about.description2}</p>
                         )}
-                        <button type="button" className="custom__button">Know More</button>
+                        <a href="#contact">
+                        <button type="button"  className="custom__button">Know More</button>
+                        </a>
                     </div>
                 </div>
                 {/*{starsOff && <StarsCanvas/>}*/}
+
             </div>
             ))}
+            {/*<DiamondCanvas/>*/}
+            {/*<div style={{width: '400px', height: '400px'}}>*/}
+            {/*    <Diamond3/>*/}
+            {/*</div>*/}
+            {/*<DiamondCanvas/>*/}
         </div>
 
     );

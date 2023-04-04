@@ -8,6 +8,7 @@ import './Header.scss';
 import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
 import {client} from "../../client";
+import Diamond3 from "../../components/canvas/Diamond3";
 
 const Header = () => {
     const [starsOff, setStarsOff] = useState(true);
@@ -88,7 +89,13 @@ const Header = () => {
                         {head.description && (
                         <p className="p__opensans" style={{ margin: '2rem 0' }}>{head.description} </p>
                         )}
+
+                        <a href="#contact">
                         <button type="button" className="custom__button">Get a Quote</button>
+                        </a>
+                        <div style={{width: '150px', height: '150px'}}>
+                            <Diamond3/>
+                        </div>
                     </div>
 
                     {/*<div className="app__wrapper_img custom__mobile-header" style={{flexDirection: 'column', zIndex: '5', display: 'none'}}>*/}

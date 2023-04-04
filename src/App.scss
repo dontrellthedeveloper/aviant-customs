@@ -121,6 +121,7 @@ body::-webkit-scrollbar-track-piece
   //align-items: flex-start;
   align-items: center;
   flex-direction: column;
+  //margin-top: 40px;
 
   @media screen and (max-width: 1150px) {
     align-items: center;
@@ -241,6 +242,7 @@ body::-webkit-scrollbar-track-piece
   line-height: 83.2px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .spoon__img {

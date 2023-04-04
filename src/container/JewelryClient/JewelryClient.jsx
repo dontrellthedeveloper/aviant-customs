@@ -6,6 +6,7 @@ import StarsCanvas2 from "../../components/canvas/Stars2";
 import { HiVolumeUp, HiVolumeOff } from 'react-icons/hi';
 import { BsFillPlayFill, BsFillPauseFill } from 'react-icons/bs';
 import JewelryGallery from "../JewelryGallery/JewelryGallery";
+import Diamond3 from "../../components/canvas/Diamond3";
 
 
 const JewelryClient = ({jewel}) => {
@@ -98,6 +99,8 @@ const JewelryClient = ({jewel}) => {
 
     return (
         <div style={{borderTop: '1px solid rgb(224, 204, 132)'}}>
+
+
             {jewel.video && (
                 <div style={{position: "relative"}}>
                     <div className='app__bg '>
@@ -107,10 +110,15 @@ const JewelryClient = ({jewel}) => {
                                     <h1 className="headtext__cormorant">{jewel.name}</h1>
                                 )}
 
+                                {/*<div style={{width: '100px', height: '100px'}}>*/}
+                                {/*    <Diamond3/>*/}
+                                {/*</div>*/}
+
                                 {jewel.caption && (
                                     <SubHeading title={jewel.caption}/>
                                 )}
                             </div>
+
                             <div className="app__wrapper_img app__wrapper_img-reverse relative" style={{zIndex: 10}}>
 
                                 {videoMobile &&
@@ -119,9 +127,10 @@ const JewelryClient = ({jewel}) => {
                                     src={jewel?.videoSquare?.asset.url ? jewel?.videoSquare?.asset.url : jewel?.video?.asset.url}
                                     ref={videoRef2}
                                     onClick={onVideoPress}
+                                    controlsList="nodownload"
                                     poster={jewel?.thumbnailMobile?.asset.url ? jewel?.thumbnailMobile?.asset.url : jewel?.thumbnail?.asset.url}
                                     style={{border: '5px solid #e0cc84' }}
-                                    className={`${jewel.videoSquare ? 'video__observer-styles' : 'video__styles '}`}>
+                                    className={`${jewel.videoSquare ? 'video__observer-styles' : 'video__styles '} `}>
                                     </video>
                                 }
 
@@ -131,9 +140,10 @@ const JewelryClient = ({jewel}) => {
                                     src={jewel?.video?.asset.url}
                                     ref={videoRef2}
                                     controls
+                                    controlsList="nodownload"
                                     poster={jewel?.thumbnail?.asset.url ? jewel?.thumbnail?.asset.url : ''}
                                     style={{border: '5px solid #e0cc84' }}
-                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'} `}>
+                                    className={`${jewel.vidPortrait ? 'video__styles' : 'video__observer-styles'} ${jewel.vidLandscape ? 'video__landscape-styles' : ''}`}>
                                     </video>
                                 }
 
@@ -160,21 +170,37 @@ const JewelryClient = ({jewel}) => {
                                     </div>
                                 )}
                             </div>
+
+
+                            <div className="app__wrapper_info client__mobile">
                             {jewel.description && (
-                                <div className="app__wrapper_info client__mobile">
+
                                     <div className="app__chef-content">
                                         <p className="p__opensans"> {jewel.description} </p>
                                     </div>
-                                </div>
+
+
+
+
                             )}
+                                {/*<div style={{width: '100px', height: '100px'}}>*/}
+                                {/*    <Diamond3/>*/}
+                                {/*</div>*/}
+                            </div>
+
 
                             <div className="app__wrapper_info client__desktop">
-                                {jewel.caption && (
-                                    <SubHeading title={jewel.caption}/>
-                                )}
                                 {jewel.name && (
                                     <h1 className="headtext__cormorant">{jewel.name}</h1>
                                 )}
+                                {jewel.caption && (
+                                    <SubHeading title={jewel.caption}/>
+                                )}
+
+
+                                {/*<div style={{width: '100px', height: '100px'}}>*/}
+                                {/*    <Diamond3/>*/}
+                                {/*</div>*/}
 
                                 {jewel.description && (
                                     <div className="app__chef-content">
@@ -183,9 +209,15 @@ const JewelryClient = ({jewel}) => {
                                 )}
 
                                 <div className="app__chef-sign">
-                                    <p className="p__opensans">Designed by</p>
-                                    <p>Moliere Neptune</p>
-                                    <img src={images.sign} alt="sign_image"/>
+                                    {jewel.footerNote && (
+                                    <p className="p__opensans">{jewel.footerNote}</p>
+                                    )}
+                                    {jewel.footer && (
+                                    <p>{jewel.footer}</p>
+                                    )}
+                                    {jewel.footerImg && (
+                                    <img src={jewel?.footerImg?.asset.url} alt="sign_image"/>
+                                    )}
                                 </div>
                             </div>
                         </div>

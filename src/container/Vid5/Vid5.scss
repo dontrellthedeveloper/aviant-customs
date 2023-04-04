@@ -5,7 +5,8 @@
   flex-direction: column;
   width: 100%;
 
-  margin-top: 5rem;
+  //margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .app__chef-content_quote {
@@ -37,7 +38,7 @@
 
 .app__chef-sign img {
   width: 250px;
-  margin-top: 3rem;
+  margin-top: .5rem;
 }
 
 @media screen and (min-width: 2000px) {
@@ -60,3 +61,15 @@
   }
 }
 
+
+.video__landscape-styles {
+  width: 780px;
+
+  @media screen and (max-width: 1400px) {
+    width: 680px;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
+}

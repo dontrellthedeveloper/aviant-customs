@@ -28,6 +28,7 @@ export default {
             title: 'Description',
             type: 'string',
         },
+
         {
             title: 'Check this Box if the video should be after text',
             name: 'vidReverse',
@@ -46,7 +47,11 @@ export default {
             name: 'vidPortrait',
             type: 'boolean',
         },
-
+        {
+            title: 'Check this Box if the video is Landscape Size.',
+            name: 'vidLandscape',
+            type: 'boolean',
+        },
         {
             name: 'thumbnail',
             title: 'Thumbnail',
@@ -66,6 +71,24 @@ export default {
         {
             name: 'thumbnailMobile',
             title: 'Mobile Square Thumbnail',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
+        {
+            name: 'footerNote',
+            title: 'Designer Footer Note',
+            type: 'string',
+        },
+        {
+            name: 'footer',
+            title: 'Designer Footer',
+            type: 'string',
+        },
+        {
+            name: 'footerImg',
+            title: 'Designer Footer Image',
             type: 'image',
             options: {
                 hotspot: true,

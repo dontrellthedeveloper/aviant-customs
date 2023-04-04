@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7683885f-776d-439f-98e4-af2a39e7da3e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Loader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/canvas/Diamond.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/canvas/Diamond2.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/canvas/Diamond3.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend_sanity/schemas/jewelry.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend_sanity/schemas/jewelry.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/Client/Client.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Client/Client.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/JewelryClient/JewelryClient.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/JewelryClient/JewelryClient.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/JewelryGallery/JewelryGallery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/JewelryGallery/JewelryGallery.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Vid5/Vid5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Vid5/Vid5.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +78,8 @@
       <workItem from="1679951416369" duration="4000" />
       <workItem from="1680114764108" duration="385000" />
       <workItem from="1680165850360" duration="7221000" />
-      <workItem from="1680369895741" duration="3865000" />
+      <workItem from="1680369895741" duration="7773000" />
+      <workItem from="1680555019690" duration="24836000" />
     </task>
     <servers />
   </component>

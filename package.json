@@ -5,14 +5,17 @@
   "dependencies": {
     "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.11.9",
+    "@react-three/postprocessing": "^2.7.1",
     "@sanity/client": "^5.3.2",
     "@sanity/image-url": "^1.0.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^10.1.0",
+    "leva": "^0.9.34",
     "maath": "^0.5.2",
     "node-sass": "^7.0.3",
+    "r3f-perf": "^7.1.2",
     "react": "^18.2.0",
     "react-div-100vh": "^0.7.0",
     "react-dom": "^18.2.0",
@@ -21,6 +24,7 @@
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "three": "^0.150.1",
+    "three-stdlib": "^2.21.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

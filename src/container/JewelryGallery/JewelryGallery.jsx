@@ -132,7 +132,8 @@ const Gallery = ({jewel}) => {
                         {jewel.galleryDesc && (
                             <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>{jewel.galleryDesc}</p>
                         )}
-                        <button type="button" className="custom__button">View More</button>
+
+                        <button onClick={() => showImage(imagesG[0])} type="button" className="custom__button">View More</button>
                     </div>
 
 

@@ -3,6 +3,7 @@ import JewelryClient from "../JewelryClient/JewelryClient";
 import JewelryGallery from "../JewelryGallery/JewelryGallery";
 
 import {urlFor, client} from "../../client";
+import Diamond3 from "../../components/canvas/Diamond3";
 
 const Client = () => {
     const [jewelry, setJewelry] = useState([]);
@@ -22,6 +23,9 @@ const Client = () => {
             vidReverse,
             galleryReverse,
             vidPortrait,
+            vidLandscape,
+            footerNote,
+            footer,
             thumbnail{
                 asset->{
                     _id,
@@ -70,6 +74,12 @@ const Client = () => {
                     url
                 }
             },
+            footerImg{
+                asset->{
+                    _id,
+                    url
+                }
+            },
 
         }`).then((data) => setJewelry(data))
             .catch(console.error)
@@ -79,6 +89,7 @@ const Client = () => {
 
     return (
         <div  id="full" className='scroll__margin'>
+            {/*<Diamond3/>*/}
            {jewelry.map((jewel, index) => (
              <JewelryClient jewel={jewel} key={jewel.name + index} />
            ))}
