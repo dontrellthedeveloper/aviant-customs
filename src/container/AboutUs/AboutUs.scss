@@ -1,5 +1,10 @@
 .app__aboutus {
     position: relative;
+    height: 800px;
+
+    @media screen and (max-width: 900px) {
+        height: 100%;
+    }
 }
 
 .app__aboutus-overlay {
@@ -21,8 +26,10 @@
 .app__aboutus-content_about {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    //justify-content: flex-end;
+    justify-content: center;
+    //align-items: flex-end;
+    align-items: center;
     flex-direction: column;
 
     text-align: right;
@@ -47,7 +54,7 @@
     }
 
     @media screen and (max-width: 767px) {
-        height: 500px;
+        height: 300px;
     }
 }
 
@@ -58,8 +65,10 @@
 .app__aboutus-content_history {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    //justify-content: flex-end;
+    justify-content: center;
+    //align-items: flex-end;
+    align-items: center;
     flex-direction: column;
 
     text-align: left;
@@ -104,7 +113,18 @@
 
 @media screen and (max-width: 650px) {
     .app__aboutus-overlay img {
-        width: 80%;
-        height: 320px;
+        //width: 80%;
+        //width: 320px;
+        //height: 320px;
+
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .app__aboutus-overlay img {
+        width: 270px;
+        height: 270px;
     }
 }

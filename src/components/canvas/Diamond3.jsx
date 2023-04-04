@@ -53,6 +53,7 @@ function Diamond(props) {
         // </CubeCamera>
     <mesh  ref={ref} geometry={nodes.Diamond_1_0.geometry} {...props}>
         <MeshRefractionMaterial
+
             envMap={texture}
             toneMapped={false} />
     </mesh>

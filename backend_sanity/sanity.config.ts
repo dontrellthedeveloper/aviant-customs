@@ -10,6 +10,7 @@ import {PlugIcon} from '@sanity/icons'
 import {HomeIcon} from '@sanity/icons'
 import {UserIcon} from '@sanity/icons'
 import {EditIcon} from '@sanity/icons'
+import {LinkIcon} from '@sanity/icons'
 
 const devOnlyPlugins = [getStartedPlugin()]
 
@@ -66,6 +67,13 @@ export default defineConfig({
                   context,
                   title: 'Contact',
                   icon: EditIcon
+              }),
+              orderableDocumentListDeskItem({
+                  type: 'social',
+                  S,
+                  context,
+                  title: 'Social Media Links',
+                  icon: LinkIcon
               }),
 
           ])

@@ -1,7 +1,8 @@
 
 
 import React, {useEffect, useLayoutEffect, useState} from 'react';
-import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { FiFacebook, FiTwitter, FiInstagram, FiYoutube } from 'react-icons/fi';
+import {FaTiktok} from 'react-icons/fa'
 
 import { FooterOverlay, Newsletter } from '../../components';
 import { images } from '../../constants';
@@ -15,6 +16,8 @@ const Footer = () => {
 
 
     const [contact, setContact] = useState([]);
+
+    const [social, setSocial] = useState([]);
 
 
     useEffect(() => {
@@ -35,6 +38,18 @@ const Footer = () => {
             },
 
         }`).then((data) => setContact(data))
+            .catch(console.error)
+    }, []);
+
+
+    useEffect(() => {
+        client.fetch(`*[_type == "social"] | order(orderRank) {
+            title,
+            instagram,
+            facebook,
+            youtube,
+            tiktok,
+        }`).then((data) => setSocial(data))
             .catch(console.error)
     }, []);
 
@@ -77,9 +92,42 @@ const Footer = () => {
                         )}
                         <img src={images.crown} className="spoon__img" style={{ marginTop: 15 }} />
                         <div className="app__footer-links_icons">
-                            <FiFacebook />
-                            <FiTwitter />
-                            <FiInstagram />
+
+                            {social.map((media, index) => (
+                                <div key={media.title + index}>
+
+                                    {media.instagram && (
+                                        <a target='_blank' href={media.instagram}>
+                                            <FiInstagram />
+                                        </a>
+                                    )}
+
+                                    {media.facebook && (
+                                        <a target='_blank' href={media.facebook}>
+                                            <FiFacebook />
+                                        </a>
+                                    )}
+
+                                    {media.youtube && (
+                                        <a target='_blank' href={media.youtube}>
+                                            <FiYoutube/>
+                                        </a>
+                                    )}
+
+                                    {media.tiktok && (
+                                        <a target='_blank' href={media.tiktok}>
+                                             <FaTiktok/>
+                                        </a>
+                                    )}
+
+                                    {media.twitter && (
+                                        <a target='_blank' href={media.twitter}>
+                                             <FiTwitter />
+                                        </a>
+                                    )}
+                                </div>
+                           ))}
+
                         </div>
                     </div>
 
