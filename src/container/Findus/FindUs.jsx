@@ -4,7 +4,7 @@ import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
-import videoBg from '../../assets/BRIANA_PRMO.mp4';
+
 import Div100vh from "react-div-100vh";
 
 const FindUs = () => {
@@ -90,8 +90,8 @@ const FindUs = () => {
 
                 <video
                     loop
-                    src={videoBg}
-                    ref={videoRef2}
+                    // src={videoBg}
+                    // ref={videoRef2}
                     // onClick={onVideoPress}
                     controls
                     // onMouseOver={videoHoverOn}

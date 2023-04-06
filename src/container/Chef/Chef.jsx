@@ -7,7 +7,7 @@ import { images } from '../../constants';
 import './Chef.scss';
 import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
-import videoBg from '../../assets/PRIYA_REEL.mp4';
+// import videoBg from '../../assets/PRIYA_REEL.mp4';
 import Div100vh from 'react-div-100vh'
 import videothumb from "../../assets/priyathumb.png";
 import { HiVolumeUp, HiVolumeOff } from 'react-icons/hi';
@@ -118,12 +118,7 @@ const Chef = () => {
                         {videoMobile &&
                             <video
                                 loop
-                                src={videoBg}
-                                ref={videoRef2}
-                                onClick={onVideoPress}
-                                // muted
-                                // controls
-                                poster={videothumb}
+
                                 // onMouseOver={videoHoverOn}
                                 // onMouseOut={videoHoverOff}
                                 // autoPlay
@@ -142,12 +137,7 @@ const Chef = () => {
                         {!videoMobile &&
                             <video
                                 loop
-                                src={videoBg}
-                                ref={videoRef2}
-                                // onClick={onVideoPress}
-                                muted
-                                controls
-                                poster={videothumb}
+
                                 // onMouseOver={videoHoverOn}
                                 // onMouseOut={videoHoverOff}
                                 // autoPlay

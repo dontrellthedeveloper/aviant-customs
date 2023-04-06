@@ -84,14 +84,16 @@ const Header = () => {
                             <SubHeading title={head.caption} />
                         )}
                         {head.title && (
-                        <h1 className="app__header-h1">{head.title}</h1>
+                            <h1 className="app__header-h1">{head.title}</h1>
                         )}
                         {head.description && (
-                        <p className="p__opensans" style={{ margin: '2rem 0' }}>{head.description} </p>
+                            <p className="p__opensans" style={{ margin: '2rem 0' }}>
+                                {head.description}
+                            </p>
                         )}
 
                         <a href="#contact">
-                        <button type="button" className="custom__button">Get a Quote</button>
+                            <button type="button" className="custom__button">Get a Quote</button>
                         </a>
                         <div style={{width: '150px', height: '150px'}}>
                             <Diamond3/>

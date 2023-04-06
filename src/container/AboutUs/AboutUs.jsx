@@ -24,7 +24,14 @@ const AboutUs = () => {
             _id,
             description1,
             description2,
+            oneSection,
             image{
+                asset->{
+                    _id,
+                    url
+                }
+            },
+            image2{
                 asset->{
                     _id,
                     url
@@ -52,9 +59,9 @@ const AboutUs = () => {
             {aboutUs.map((about, index) => (
             <div className="app__aboutus app__bg flex__center section__padding scroll__margin" style={{ position: 'relative', borderTop: '1px solid rgb(224, 204, 132)'}}   id="about" key={about.name + index}>
 
-                {/*{about.image && (*/}
+                {/*{about.image2 && (*/}
                 {/*    <div className="app__aboutus-overlay flex__center">*/}
-                {/*        <img src={about?.image?.asset.url} alt="G_overlay" />*/}
+                {/*        <img src={about?.image2?.asset.url} alt="G_overlay" />*/}
                 {/*    </div>*/}
                 {/*)}*/}
 
@@ -73,6 +80,13 @@ const AboutUs = () => {
                         {about.description1 && (
                             <p className="p__opensans" style={{textAlign: 'center'}}>{about.description1}</p>
                         )}
+
+                        {about.image && (
+                        <div className=" flex__center">
+                            <img style={{width: '300px'}} src={about?.image?.asset.url} alt="G_overlay" />
+                        </div>
+                        )}
+
                         {/*<a href="#contact">*/}
                         {/*    <button type="button" className="custom__button">Know More</button>*/}
                         {/*</a>*/}
@@ -85,12 +99,12 @@ const AboutUs = () => {
                         {/*</div>*/}
                     {/*</div>*/}
 
-                    <div className='diamond__about-size' style={{marginLeft: '50px', marginRight: '50px'}}>
+                    <div className={`diamond__about-size ${about.oneSection ? 'one-section__display' : ''} `} style={{marginLeft: '50px', marginRight: '50px'}}>
                         <Diamond2/>
                     </div>
 
 
-                    <div className="app__aboutus-content_history">
+                    <div className={`app__aboutus-content_history ${about.oneSection ? 'one-section__display' : ''}`}>
                         {about.title2 && (
                             <h1 className="headtext__cormorant">{about.title2}</h1>
                         )}

@@ -23,10 +23,10 @@ import gericht from '../assets/gericht.png';
 import jiggs from '../assets/aviant-customs-1.png';
 import logo2 from '../assets/aviantcustomslogogold.png';
 import crown from '../assets/crown.png';
-import zce1 from '../assets/zce1.jpg';
-import zce2 from '../assets/zce2.jpg';
-import zce3 from '../assets/zce3.jpg';
-import zce4 from '../assets/zce4.jpg';
+// import zce1 from '../assets/zce1.jpg';
+// import zce2 from '../assets/zce2.jpg';
+// import zce3 from '../assets/zce3.jpg';
+// import zce4 from '../assets/zce4.jpg';
 import p1 from '../assets/p1.jpg';
 import p2 from '../assets/p2.jpg';
 import p3 from '../assets/p3.jpg';
@@ -44,7 +44,7 @@ import z3 from '../assets/z3.jpg';
 import z4 from '../assets/z4.jpg';
 import ringsthumb from '../assets/ringsthumb.png';
 import chainsthumb from '../assets/chainsthumb.png';
-import briannathumb from '../assets/briannathumb.png';
+// import briannathumb from '../assets/briannathumb.png';
 import priyathumb from '../assets/priyathumb.png';
 
 export default {
@@ -73,10 +73,10 @@ export default {
   gericht,
   jiggs,
   crown,
-  zce1,
-  zce2,
-  zce3,
-  zce4,
+  // zce1,
+  // zce2,
+  // zce3,
+  // zce4,
   p1,
   p2,
   p3,
@@ -88,13 +88,13 @@ export default {
   j1,
   j2,
   j3,
-  z1,
-  z2,
-  z3,
-  z4,
-  ringsthumb,
-  chainsthumb,
-  briannathumb,
-  priyathumb
+  // z1,
+  // z2,
+  // z3,
+  // z4,
+  // ringsthumb,
+  // chainsthumb,
+  // briannathumb,
+  // priyathumb
 
 };

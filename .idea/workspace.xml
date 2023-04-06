@@ -2,16 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7683885f-776d-439f-98e4-af2a39e7da3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend_sanity/schemas/social.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildspec.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend_sanity/sanity.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend_sanity/sanity.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend_sanity/schemas/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend_sanity/schemas/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_sanity/schemas/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend_sanity/schemas/about.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/canvas/Diamond2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Diamond2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/canvas/Diamond3.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Diamond3.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/BRIANA_PRMO.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/P-TENNIS.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/PRIYA_REEL.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/STAN-RING.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/meal.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/zce1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/zce2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/zce3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/zce4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/AboutUs/AboutUs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Chef/Chef.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Chef/Chef.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Findus/FindUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Findus/FindUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Vid3/Vid3.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Vid3/Vid3.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Vid4/Vid4.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Vid4/Vid4.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Vid5/Vid5.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Vid5/Vid5.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +87,7 @@
       <workItem from="1680114764108" duration="385000" />
       <workItem from="1680165850360" duration="7221000" />
       <workItem from="1680369895741" duration="7773000" />
-      <workItem from="1680555019690" duration="33653000" />
+      <workItem from="1680555019690" duration="41694000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,18 @@
+version: 0.2
+
+
+phases:
+  pre_build:
+    commands:
+      - npm install --legacy-peer-deps
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - aws cloudfront create-invalidation --distribution-id E3A6Q4O5F8W1ZB --path /\*
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build/

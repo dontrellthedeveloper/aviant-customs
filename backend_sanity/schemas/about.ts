@@ -7,6 +7,11 @@ export default {
     orderings: [orderRankOrdering],
     fields: [
         {
+            title: 'Check this Box for only one section',
+            name: 'oneSection',
+            type: 'boolean',
+        },
+        {
             name: 'title',
             type: 'string',
             title: 'Title 1'

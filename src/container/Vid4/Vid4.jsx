@@ -7,9 +7,7 @@ import { images } from '../../constants';
 import './Vid4.scss';
 import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
-import videoBg from '../../assets/STAN-RING.mp4';
-import Div100vh from 'react-div-100vh'
-import videothumb from "../../assets/ringsthumb.png";
+
 import {BsFillPauseFill, BsFillPlayFill} from "react-icons/bs";
 import {HiVolumeOff, HiVolumeUp} from "react-icons/hi";
 
@@ -101,11 +99,7 @@ const Chef = () => {
                     {videoMobile &&
                     <video
                         loop
-                        src={videoBg}
-                        ref={videoRef2}
-                        onClick={onVideoPress}
-                        // controls
-                        poster={videothumb}
+
                         // onMouseOver={videoHoverOn}
                         // onMouseOut={videoHoverOff}
                         // autoPlay
@@ -124,12 +118,7 @@ const Chef = () => {
                     {!videoMobile &&
                         <video
                             loop
-                            src={videoBg}
-                            ref={videoRef2}
-                            // onClick={onVideoPress}
-                            muted
-                            controls
-                            poster={videothumb}
+
                             // onMouseOver={videoHoverOn}
                             // onMouseOut={videoHoverOff}
                             // autoPlay

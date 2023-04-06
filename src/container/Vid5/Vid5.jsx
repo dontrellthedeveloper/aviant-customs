@@ -7,7 +7,7 @@ import { images } from '../../constants';
 import './Vid5.scss';
 import StarsCanvas from "../../components/canvas/Stars";
 import StarsCanvas2 from "../../components/canvas/Stars2";
-import videoBg from '../../assets/BRIANA_PRMO.mp4';
+// import videoBg from '../../assets/BRIANA_PRMO.mp4';
 import Div100vh from 'react-div-100vh'
 import videothumb from "../../assets/briannathumb.png";
 import {BsFillPauseFill, BsFillPlayFill} from "react-icons/bs";
@@ -127,9 +127,9 @@ const Chef = () => {
 
                         <video
                             loop
-                            src={videoBg}
-                            ref={videoRef2}
-                            poster={videothumb}
+                            // src={videoBg}
+                            // ref={videoRef2}
+                            // poster={videothumb}
                             onClick={onVideoPress}
                             // controls
                             // onMouseOver={videoHoverOn}
@@ -150,12 +150,7 @@ const Chef = () => {
                     {!videoMobile &&
                         <video
                             loop
-                            src={videoBg}
-                            ref={videoRef2}
-                            // onClick={onVideoPress}
-                            muted
-                            controls
-                            poster={videothumb}
+
                             // onMouseOver={videoHoverOn}
                             // onMouseOut={videoHoverOff}
                             // autoPlay
