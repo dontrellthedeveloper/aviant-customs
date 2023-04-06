@@ -25,14 +25,14 @@ function Diamond(props) {
     const texture = useLoader(RGBELoader, '/studio_small_08_4k.hdr')
 
     // Optional config
-    // const config = useControls({
-    //     bounces: { value: 3, min: 0, max: 8, step: 1 },
-    //     aberrationStrength: { value: 0.01, min: 0, max: 0.1, step: 0.01 },
-    //     ior: { value: 2.75, min: 0, max: 10 },
-    //     fresnel: { value: 1, min: 0, max: 1 },
-    //     color: 'white',
-    //     fastChroma: true
-    // })
+    const config = useControls({
+        bounces: { value: 3, min: 0, max: 8, step: 1 },
+        aberrationStrength: { value: 0.01, min: 0, max: 0.1, step: 0.01 },
+        ior: { value: 2.75, min: 0, max: 10 },
+        fresnel: { value: 1, min: 0, max: 1 },
+        color: '#add8e6',
+        fastChroma: true
+    })
     return (
         // <CubeCamera resolution={256} frames={1} envMap={texture}>
         //     {(texture) => (
@@ -53,7 +53,7 @@ function Diamond(props) {
         // </CubeCamera>
     <mesh  ref={ref} geometry={nodes.Diamond_1_0.geometry} {...props}>
         <MeshRefractionMaterial
-
+            {...config}
             envMap={texture}
             toneMapped={false} />
     </mesh>
