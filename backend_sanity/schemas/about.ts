@@ -22,6 +22,19 @@ export default {
             type: 'string',
         },
         {
+            name: 'image',
+            title: 'Image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
+        {
+            name: 'embedded',
+            title: 'Embedded Code',
+            type: 'string',
+        },
+        {
             name: 'title2',
             type: 'string',
             title: 'Title 2'
@@ -31,14 +44,7 @@ export default {
             title: 'Description 2',
             type: 'string',
         },
-        {
-            name: 'image',
-            title: 'Image',
-            type: 'image',
-            options: {
-                hotspot: true,
-            },
-        },
+
         orderRankField({ type: 'about' }),
     ]
 }

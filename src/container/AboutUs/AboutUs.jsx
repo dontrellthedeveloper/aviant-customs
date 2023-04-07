@@ -25,6 +25,7 @@ const AboutUs = () => {
             description1,
             description2,
             oneSection,
+            embedded,
             image{
                 asset->{
                     _id,
@@ -87,6 +88,14 @@ const AboutUs = () => {
                         </div>
                         )}
 
+                        {/*{about.embedded && (*/}
+                        {/*    <div className=" flex__center">*/}
+                        {/*        {about.embedded}*/}
+                        {/*    </div>*/}
+                        {/*)}*/}
+
+
+
                         {/*<a href="#contact">*/}
                         {/*    <button type="button" className="custom__button">Know More</button>*/}
                         {/*</a>*/}
@@ -121,11 +130,9 @@ const AboutUs = () => {
 
             </div>
             ))}
-            {/*<DiamondCanvas/>*/}
-            {/*<div style={{width: '400px', height: '400px'}}>*/}
-            {/*    <Diamond3/>*/}
-            {/*</div>*/}
-            {/*<DiamondCanvas/>*/}
+
+
+
         </div>
 
     );
