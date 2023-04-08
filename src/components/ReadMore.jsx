@@ -8,11 +8,19 @@ export const ReadMore = ({ children }) => {
         setIsReadMore(!isReadMore);
     };
     return (
-        <p className="text">
-            {isReadMore ? text.slice(0, 400) : text}
-            <span onClick={toggleReadMore} className="read-or-hide">
-        {isReadMore ? "...read more" : " show less"}
-      </span>
-        </p>
+        <>
+            {text > text.slice(0,400) ? (
+                <p className="text">
+                    {isReadMore ? text.slice(0, 400) : text}
+                    <span onClick={toggleReadMore} className="read-or-hide">
+                {isReadMore ? "...read more" : " show less"}
+              </span>
+                </p>
+            ): (
+                text
+            )}
+
+        </>
+
     );
 };
