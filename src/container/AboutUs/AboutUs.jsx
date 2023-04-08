@@ -9,6 +9,7 @@ import DiamondCanvas from "../../components/canvas/Diamond";
 import DiamondCanvas2 from "../../components/canvas/Diamond2";
 import Diamond3 from "../../components/canvas/Diamond3";
 import Diamond2 from "../../components/canvas/Diamond2";
+import {ReadMore} from "../../components/ReadMore";
 
 const AboutUs = () => {
     const [starsOff, setStarsOff] = useState(true);
@@ -78,9 +79,16 @@ const AboutUs = () => {
                             <h1 className="headtext__cormorant">{about.title}</h1>
                         )}
                         <img src={images.crown} alt="about_spoon" className="spoon__img" />
+
+
                         {about.description1 && (
-                            <p className="p__opensans" style={{textAlign: 'center'}}>{about.description1}</p>
+                            <p className="p__opensans" style={{textAlign: 'center'}}>
+                                <ReadMore>
+                                {about.description1}
+                                </ReadMore>
+                            </p>
                         )}
+
 
                         {about.image && (
                         <div className=" flex__center">
@@ -119,7 +127,11 @@ const AboutUs = () => {
                         )}
                         <img src={images.crown} alt="about_spoon" className="spoon__img" />
                         {about.description2 && (
-                            <p className="p__opensans">{about.description2}</p>
+                            <p className="p__opensans">
+                                <ReadMore>
+                                {about.description2}
+                                </ReadMore>
+                            </p>
                         )}
                         {/*<a href="#contact">*/}
                         {/*<button type="button"  className="custom__button">Know More</button>*/}

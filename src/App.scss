@@ -220,6 +220,11 @@ body::-webkit-scrollbar-track-piece
   line-height: 28px;
   font-size: 16px;
 
+  //display: -webkit-box;
+  //overflow: hidden;
+  //-webkit-box-orient: vertical;
+  //-webkit-line-clamp: 11;
+
   @media screen and (max-width: 1150px) {
     text-align: center;
   }
@@ -456,4 +461,10 @@ body::-webkit-scrollbar-track-piece
 
 .leva-c-kWgxhW-czBHep-hideTitleBar-false {
   display: none !important;
+}
+
+
+.read-or-hide{
+  color: rgb(192,192,192);
+  cursor: pointer;
 }
