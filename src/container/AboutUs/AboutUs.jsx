@@ -10,6 +10,8 @@ import DiamondCanvas2 from "../../components/canvas/Diamond2";
 import Diamond3 from "../../components/canvas/Diamond3";
 import Diamond2 from "../../components/canvas/Diamond2";
 import {ReadMore} from "../../components/ReadMore";
+import {PortableText} from "@portabletext/react";
+import doc from  './doc.json'
 
 const AboutUs = () => {
     const [starsOff, setStarsOff] = useState(true);
@@ -27,7 +29,9 @@ const AboutUs = () => {
             description2,
             oneSection,
             embedded,
-            image{
+            paypalBtn,
+            spacingXl,
+            image{  
                 asset->{
                     _id,
                     url
@@ -59,7 +63,7 @@ const AboutUs = () => {
     return (
         <div>
             {aboutUs.map((about, index) => (
-            <div className="app__aboutus app__bg flex__center section__padding scroll__margin" style={{ position: 'relative', borderTop: '1px solid rgb(224, 204, 132)'}}   id="about" key={about.name + index}>
+            <div className={` ${about.spacingXl ? 'app__aboutus-xl' : 'app__aboutus'}  app__bg flex__center section__padding scroll__margin`} style={{ position: 'relative', borderTop: '1px solid rgb(224, 204, 132)'}}   id="about" key={about.name + index}>
 
                 {/*{about.image2 && (*/}
                 {/*    <div className="app__aboutus-overlay flex__center">*/}
@@ -89,6 +93,15 @@ const AboutUs = () => {
                             </p>
                         )}
 
+                        {about.paypalBtn && (
+                            <form style={{marginTop: '40px', marginBottom: '40px'}} action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick"/>
+                                <input type="hidden" name="hosted_button_id" value="4FUAPDE7RC3YC"/>
+                                <input style={{width: '260px'}} type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+                            </form>
+                        )}
+
 
                         {about.image && (
                         <div className=" flex__center">
@@ -96,11 +109,14 @@ const AboutUs = () => {
                         </div>
                         )}
 
-                        {/*{about.embedded && (*/}
+                        {/*{about.content && (*/}
                         {/*    <div className=" flex__center">*/}
-                        {/*        {about.embedded}*/}
+                        {/*        {about.content}*/}
                         {/*    </div>*/}
                         {/*)}*/}
+
+
+
 
 
 

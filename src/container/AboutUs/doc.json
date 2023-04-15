@@ -1,0 +1,40 @@
+{
+  "_createdAt": "2023-04-06T00:05:06Z",
+  "_id": "0b4016fb-df15-4b60-b98c-208185256ed1",
+  "_rev": "AZg1e3XcMWZZajAzjbBnmO",
+  "_type": "about",
+  "_updatedAt": "2023-04-14T21:08:16Z",
+  "content": [
+    {
+      "_key": "234deafa0b22",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "08c0fcc4684f",
+          "_type": "span",
+          "marks": [],
+          "text": ""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "b362a2a1c06a",
+      "_type": "code",
+      "code": "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\n<input type=\"hidden\" name=\"hosted_button_id\" value=\"4FUAPDE7RC3YC\">\n<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">\n<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">\n</form>",
+      "language": "html"
+    }
+  ],
+  "description1": "Ordering Process Is Simple, After You Decide What You Want To Create, We Determine Your Budget, Then We Will Make A 3D Design Of Your Idea ($200 Fee Credited To Your Final Balance), Once 3D Design Is Approved A 50% Deposit Required To Begin Creating The Custom Jewelry, Once It's Complete Remaining Balance Is Due. You Can Use Link Below To Make Payment, To Pay With CashApp Scroll Down.",
+  "image": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-40ec93ad736e120c772d7199efae2189b96e738f-746x975-jpg",
+      "_type": "reference"
+    }
+  },
+  "oneSection": true,
+  "orderRank": "0|fs4i08:",
+  "title": "How To Order"
+}

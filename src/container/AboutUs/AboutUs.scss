@@ -1,6 +1,15 @@
 .app__aboutus {
     position: relative;
-    height: 800px;
+    height: 800px ;
+
+    @media screen and (max-width: 900px) {
+        height: 100%;
+    }
+}
+
+.app__aboutus-xl {
+    position: relative;
+    height: 1000px ;
 
     @media screen and (max-width: 900px) {
         height: 100%;

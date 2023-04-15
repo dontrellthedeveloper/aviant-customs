@@ -11,6 +11,7 @@ import {HomeIcon} from '@sanity/icons'
 import {UserIcon} from '@sanity/icons'
 import {EditIcon} from '@sanity/icons'
 import {LinkIcon} from '@sanity/icons'
+import {codeInput} from '@sanity/code-input';
 
 const devOnlyPlugins = [getStartedPlugin()]
 
@@ -22,7 +23,7 @@ export default defineConfig({
   dataset: 'production',
     basePath: '/admin',
 
-  plugins: [deskTool({
+  plugins: [codeInput(), deskTool({
     structure: (S, context) => {
         console.log(context)
       return  S.list()

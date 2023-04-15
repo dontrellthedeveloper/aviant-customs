@@ -1,5 +1,6 @@
 import {orderRankField, orderRankOrdering} from "@sanity/orderable-document-list";
 
+
 export default {
     name: 'about',
     type: 'document',
@@ -30,9 +31,14 @@ export default {
             },
         },
         {
-            name: 'embedded',
-            title: 'Embedded Code',
-            type: 'string',
+            title: 'Check this Box for Paypal Btn',
+            name: 'paypalBtn',
+            type: 'boolean',
+        },
+        {
+            title: 'Check this Box for extra Spacing',
+            name: 'spacingXl',
+            type: 'boolean',
         },
         {
             name: 'title2',
