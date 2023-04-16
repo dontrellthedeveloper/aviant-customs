@@ -1,18 +1,9 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react';
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
+import { AboutUs, Footer, Header} from './container';
 import { Navbar } from './components';
 import './App.scss';
 import Splash from "./components/Splash/Splash";
-import StarsCanvas from "./components/canvas/Stars";
-import Gallery2 from "./container/Gallery2/Gallery2";
-import Gallery3 from "./container/Gallery3/Gallery3";
-import Gallery4 from "./container/Gallery4/Gallery4";
-import Vid3 from "./container/Vid3/Vid3";
-import Vid4 from "./container/Vid4/Vid4";
-import Vid5 from "./container/Vid5/Vid5";
-import JewelryClient from "./container/JewelryClient/JewelryClient";
-import JewelryGallery from "./container/JewelryGallery/JewelryGallery";
 import Client from "./container/Client/Client";
 
 
