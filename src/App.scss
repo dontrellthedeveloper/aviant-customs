@@ -390,9 +390,9 @@ body::-webkit-scrollbar-track-piece
 .gallery__direction {
   flex-direction: row;
 
-  @media screen and (max-width: 1151px) {
-    flex-direction: column ;
-  }
+  //@media screen and (max-width: 1151px) {
+  //  flex-direction: column ;
+  //}
 }
 
 @media screen and (min-width: 1151px) {
