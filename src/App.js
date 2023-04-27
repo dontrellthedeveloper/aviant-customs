@@ -14,7 +14,7 @@ import Vid4 from "./container/Vid4/Vid4";
 import Vid5 from "./container/Vid5/Vid5";
 import JewelryClient from "./container/JewelryClient/JewelryClient";
 import JewelryGallery from "./container/JewelryGallery/JewelryGallery";
-
+import {Helmet} from "react-helmet";
 
 const App = () => {
     const [splashOff, setSplashOff] = useState(true);
@@ -40,6 +40,19 @@ const App = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Aviant Customs</title>
+                <meta
+                    name='description'
+                    content='Custom Jewelry Company located in Los Angeles, CA.'
+                />
+                <meta name='keywords' content='Jewelry'/>
+                <link
+                    rel="apple-touch-icon"
+                    sizes="180x180"
+                    href="%PUBLIC_URL%/logo.png"
+                />
+            </Helmet>
             <Splash/>
 
             <Navbar />
