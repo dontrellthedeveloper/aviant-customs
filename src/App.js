@@ -44,7 +44,7 @@ const App = () => {
                 <title>Aviant Customs</title>
                 <meta
                     name='description'
-                    content='Custom Jewelry Company located in Los Angeles, CA.'
+                    content='Custom Jewelry by Moliere Neptune'
                 />
                 <meta name='keywords' content='Jewelry'/>
                 <link
