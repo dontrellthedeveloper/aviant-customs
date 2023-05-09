@@ -45,7 +45,7 @@ const App = () => {
                 <meta
                     name='og:description'
                     property='og:description'
-                    content='Custom Jewelry by Moliere Neptune'
+                    content='Custom Jewelry by Moe'
                 />
                 <meta name='keywords' content='Jewelry'/>
                 <link
