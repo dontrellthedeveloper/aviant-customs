@@ -43,7 +43,8 @@ const App = () => {
             <Helmet>
                 <title>Aviant Customs</title>
                 <meta
-                    name='description'
+                    name='og:description'
+                    property='og:description'
                     content='Custom Jewelry by Moliere Neptune'
                 />
                 <meta name='keywords' content='Jewelry'/>
